@@ -26,7 +26,7 @@
 </head>
 <body>
   <x-navbar />
-  <main class="py-8">
+  <main class=" bg-greycode-light-gray">
     {{ $slot }}
   </main>
   <x-footer />

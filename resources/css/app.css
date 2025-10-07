@@ -17,3 +17,81 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+/* Gradient Text Styles */
+.gradient-text {
+    background-image: linear-gradient(to right, black, var(--color-greycode-mid-blue), var(--color-greycode-gray));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* Blue Interpunct Separator */
+.separator::before {
+    content: "·";
+    color: var(--color-greycode-light-blue);
+    font-size: 1.5em;
+    line-height: 1;
+}
+.gradient-outline-button {
+    /* Basic button styling */
+    padding: 12px 32px;
+    background: transparent;
+    color: #333; /* Text color - adjust as needed */
+    border: none;
+    border-radius: 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    
+    /* Create gradient outline using pseudo-element */
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 24px;
+        padding: 5px; /* This controls outline thickness */
+        background: linear-gradient(to right, 
+            var(--color-greycode-light-blue), 
+            var(--color-greycode-gray), 
+            black);
+        -webkit-mask: 
+            linear-gradient(#fff 0 0) content-box, 
+            linear-gradient(#fff 0 0);
+        mask: 
+            linear-gradient(#fff 0 0) content-box, 
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+    }
+    
+    /* Hover effect */
+    &:hover {
+        background: rgba(0, 0, 0, 0.05); /* Subtle hover background */
+    }
+}
+
+.icon-background {
+  background: #2C7DE6;
+background: linear-gradient(336deg, rgba(44, 125, 230, 1) 20%, rgba(0, 0, 0, 1) 84%);
+}
+
+@theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+}
