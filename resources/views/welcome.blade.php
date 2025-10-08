@@ -1,5 +1,5 @@
 <x-layout>
-  <section class="text-gray-600 body-font h-screen flex items-center" style="background-image: url('{{ asset('images/Untitled-1_0006_Layer-2.png') }}'); background-size: cover; background-position: center;">
+  <section class="text-gray-600 body-font h-screen flex items-center" >
     <div class="container mx-auto flex md:px-24 md:flex-row flex-col items-center">
       <div class="lg:flex-grow mt-5 md:mt-0 md:w-1.5/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
          <h1 class="title-font text-4xl lg:text-[70px] lg:pl-24 sm:text-4xl mb-4 font-medium text-black uppercase">
@@ -21,8 +21,8 @@
         <!-- Your 4 image placeholders -->
         <img src="{{ asset('images/icons-01.png')}}" class="w-32 h-32 object-contain hover:animate-wiggle" alt="Placeholder 1">
         <img src="{{ asset('images/icons-02.png')}}" class="w-32 h-32 object-contain hover:animate-bounce" alt="Placeholder 2">
-        <img src="{{ asset('images/icons-03.png')}}" class="w-32 h-32 object-contain animate-bounce" alt="Placeholder 3">
-        <img src="{{ asset('images/icons-04.png')}}" class="w-32 h-32 object-contain animate-wiggle" alt="Placeholder 4">
+        <img src="{{ asset('images/icons-03.png')}}" class="w-32 h-32 object-contain hover:animate-bounce" alt="Placeholder 3">
+        <img src="{{ asset('images/icons-04.png')}}" class="w-32 h-32 object-contain hover:animate-wiggle" alt="Placeholder 4">
     </div>
   </div>
   <div class="container mx-auto px-5 py-5 lg:px-40">
@@ -129,7 +129,7 @@
         <!-- Diagonal Layout Container -->
         <div class="relative min-h-[700px] flex items-center justify-center">
             <!-- Top Right Paragraph -->
-            <div class="absolute top-0 right-0 w-1/2 lg:w-1/3 bg-white p-6 rounded-2xl shadow-lg z-10 transform -translate-y-4">
+            <div class="absolute top-0 right-0 w-1/2 lg:w-1/3 p-6 rounded-2xl shadow-lg z-10 transform -translate-y-4">
                 <p class="text-gray-700 leading-relaxed">
                     This board is a premium, all-in-one solution engineered for demanding IoT and connected applications. 
                     It features high-speed dual-core processing (240MHz), robust multi-connectivity (Wi-Fi, Bluetooth, 
@@ -147,7 +147,7 @@
             </div>
 
             <!-- Bottom Left Paragraph -->
-            <div class="absolute bottom-0 left-0 w-1/2 lg:w-1/3 bg-white p-6 rounded-2xl shadow-lg z-10 transform translate-y-4">
+            <div class="absolute bottom-0 left-0 w-1/2 lg:w-1/3 p-6 rounded-2xl shadow-lg z-10 transform translate-y-4">
                 <p class="text-gray-700 leading-relaxed">
                     Designed for reliability in remote deployments, it includes GPS tracking and solar/battery power 
                     options for uninterrupted operation. With advanced power management and rugged durability, this 

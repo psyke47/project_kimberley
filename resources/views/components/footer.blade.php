@@ -47,7 +47,7 @@
             <form action="#" method="POST" class="flex flex-col items-center mt-4 space-y-4">
                 <h4 class="text-lg font-semibold">Subscribe to our Newsletter</h4>
                 <input type="email" name="email" placeholder="Enter your email" class="px-4 py-2 rounded-md focus:outline-none text-gray-800" required>
-                <div class="bg-gradient-to-r from-fuchsia-600 to-pink-600 rounded-full p-[1px] inline-block transform transition-all duration-500 ease-in-out hover:scale-110 shadow-lg shadow-white cursor-pointer">
+                <div class="bg-gradient-to-r from-black to-greycode-light-blue rounded-full p-[1px] inline-block transform transition-all duration-500 ease-in-out hover:scale-110 shadow-lg shadow-white cursor-pointer">
                     <button type="submit" class="bg-gray-500 hover:bg-gray-950 text-white font-bold py-3 px-6 rounded-full w-full transition-all duration-500 ease-in-out hover:brightness-110 hover:animate-pulse active:animate-bounce">Subscribe</button>
                 </div>
         </form>

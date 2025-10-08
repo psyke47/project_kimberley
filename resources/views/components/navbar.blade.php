@@ -7,10 +7,10 @@
     <!-- Desktop Navigation -->
     <div class="hidden lg:flex lg:items-center lg:gap-6">
         <ul class="flex items-center gap-6 text-base font-medium">
-            <li><a href="" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">About</a></li>
-            <li><a href="#" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Blog</a></li>
-            <li><a href="#" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Careers</a></li>
-            <li><a href="#" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Contact</a></li>
+            <li><a href="/about" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">About</a></li>
+            <li><a href="/blog" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Blog</a></li>
+            <li><a href="/careers" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Careers</a></li>
+            <li><a href="/contact" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Contact</a></li>
         </ul>
         
         <!-- Education Button -->
@@ -31,7 +31,7 @@
         <!-- Mobile Menu Dropdown -->
         <div class="absolute top-full left-0 w-full bg-white shadow-lg py-2 hidden peer-checked:block z-50">
             <div class="flex flex-col items-center gap-2 text-base font-medium">
-                <a href="" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">About</a>
+                <a href="/resources/views/about.blade.php" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">About</a>
                 <a href="#" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Blog</a>
                 <a href="#" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Careers</a>
                 <a href="#" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Contact</a>
