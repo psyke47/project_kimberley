@@ -8,21 +8,21 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>{{ $title ?? 'Grey Code' }}</title>
-    <style>
+   {{--  <style>
     /* Toggle mobile menu visibility */
-    #mobile-menu-toggle:checked ~ div {
+   /*  #mobile-menu-toggle:checked ~ div {
         display: block;
-    }
+    } */
 
     /* Toggle between hamburger and close icons */
-    #mobile-menu-toggle:checked ~ label .fa-bars {
+    /* #mobile-menu-toggle:checked ~ label .fa-bars {
         display: none;
-    }
+    } */
     
-    #mobile-menu-toggle:checked ~ label .fa-xmark {
+    /* #mobile-menu-toggle:checked ~ label .fa-xmark {
         display: block;
     }
-    </style>
+    </style> --}}
 </head>
 <body>
   <x-navbar />

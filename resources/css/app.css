@@ -95,3 +95,25 @@ background: linear-gradient(336deg, rgba(44, 125, 230, 1) 20%, rgba(0, 0, 0, 1) 
     }
   }
 }
+
+.hero-underline {
+  position: relative;
+}
+
+.hero-underline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  background-color: var(--color-greycode-light-blue);
+  transform-origin: center;
+  transform: translate(-50%, 0) scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.hero-underline:hover::before {
+  transform: translate(-50%, 0) scaleX(1);
+}
+
