@@ -6,10 +6,73 @@
             <div class="flex flex-col">
                 <h2 class="text-black text-4xl lg:text-5xl font-bold mb-8 text-left">Contact Us</h2>
                 <div class="space-y-6 text-left">
-                    <h4 class="text-2xl font-semibold">Let's <span class="text-greycode-mid-blue">chat</span></h4>
+                    <h4 class="text-3xl font-semibold">Let's <span class="text-greycode-mid-blue">chat</span></h4>
                     <p class="text-lg text-gray-700 leading-relaxed">
                         We promise, your message won't disappear into the abyss. We're standing by and ready to help with any questions, comments, or thoughts you may have.
                     </p>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="space-y-6 mt-8">
+                    <h3 class="text-3xl font-semibold text-gray-900 border-b border-greycode-mid-blue pb-2">Get in Touch</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Email -->
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-envelope text-greycode-light-blue"></i>
+                                <h4 class="font-medium text-gray-900">Email</h4>
+                            </div>
+                            <a href="mailto:info@greycode.co.za" class="text-gray-600 hover:text-greycode-light-blue transition-colors block">
+                                info@greycode.co.za
+                            </a>
+                        </div>
+                        
+                        <!-- Phone -->
+                        <div class="space-y-2">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-phone text-greycode-light-blue"></i>
+                                <h4 class="font-medium text-gray-900">Phone</h4>
+                            </div>
+                            <a href="tel:+27124813515" class="text-gray-600 hover:text-greycode-light-blue transition-colors block">
+                                +27 12 481 3515
+                            </a>
+                        </div>
+                        
+                        <!-- Address -->
+                        <div class="space-y-2 md:col-span-2">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-map-marker-alt text-greycode-light-blue"></i>
+                                <h4 class="font-medium text-gray-900">Address</h4>
+                            </div>
+                            <p class="text-gray-600">
+                                123 Stamvrug, Val de Grace, Pretoria, 0184, South Africa
+                            </p>
+                        </div>
+                        
+                        <!-- Working Hours -->
+                        <div class="space-y-2 md:col-span-2">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-clock text-greycode-light-blue"></i>
+                                <h4 class="font-medium text-gray-900">Working Hours</h4>
+                            </div>
+                            <div class="text-gray-600 space-y-1">
+                                <div class="flex justify-between">
+                                    <span>Monday - Thursday:</span>
+                                    <span class="font-medium">8:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Friday:</span>
+                                    <span class="font-medium">8:00 AM - 1:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>Saturday - Sunday & Public Holidays:</span>
+                                    <span class="font-medium">Closed</span>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

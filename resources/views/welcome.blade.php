@@ -12,22 +12,24 @@
 
     <!-- Content -->
     <div class="container mx-auto flex md:px-24 md:flex-row flex-col items-center relative z-10">
-        <div class="lg:flex-grow mt-5 md:mt-0 md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font text-4xl lg:text-[70px] lg:pl-24 sm:text-4xl mb-4 font-medium text-black uppercase leading-tight">
+        <div class="lg:flex-grow mt-5 md:mt-0 md:w-2/5 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font text-4xl lg:text-[55px] lg:pl-20 sm:text-4xl mb-4 font-medium text-black uppercase leading-tight">
                 CONNECT, CONTROL, AND<br>
                 AUTOMATE<br>
                 <span class="text-greycode-light-blue hero-underline">YOUR WORLD</span>
             </h1>
         </div>
-        <div class="lg:max-w-lg lg:w-full mb-5 md:mb-0 md:w-1/2 w-3/6 relative z-20">
-            <img class="object-cover object-center rounded hover:animate-pulse" alt="hero" src="{{ asset('images/Screenshot 2025-09-29 120823.png') }}">
+        <div class="lg:max-w-3xl lg:w-full mb-5 md:mb-0 md:w-3/5 relative z-20">
+            <img class="w-full h-auto object-contain rounded-lg hover:animate-pulse transform hover:scale-105 transition-transform duration-300" 
+                 alt="hero" 
+                 src="{{ asset('images/Screenshot 2025-09-29 120823.png') }}">
         </div>
     </div>
 </section>
 <section>
   <h3 class="text-5xl font-bold mb-4 text-center mt-10">What is <span class="text-greycode-light-blue">IOT</span></h3>
   {{-- Photo needs to be inserted here --}}
-  <div class="rounded-2xl p-8 shadow-lg mx-auto max-w-4xl" style="background: #2C7DE6; background: linear-gradient(289deg, rgba(44, 125, 230, 1) 25%, rgba(121, 166, 162, 1) 84%);">
+  <div class="rounded-4xl p-8 shadow-3xl mx-auto max-w-4xl" style="background: #2C7DE6; background: linear-gradient(289deg, #2c7de6 25%, #7986A2 84%);">
     <div class="flex justify-center items-center space-x-8">
         <!-- Your 4 image placeholders -->
         <img src="{{ asset('images/icons-01.png')}}" class="w-32 h-32 object-contain hover:animate-wiggle" alt="Placeholder 1">
@@ -40,38 +42,65 @@
     <p class="text-lg mt-5 mb-8 text-center mx-5"> The Internet of Things or IoT refers to a network of devices wherein a variety of machines, buildings and other things are connected. These devices are capable of sending & receiving data from each other without requiring human-to-human or human-to-computer interaction.</p>s
   </div>
 </section>
-<section class="justify-center text-center">
-  <div class="container mx-auto px-4">
-    <h3 class="text-5xl font-bold mb-4 text-center mt-10">Our <span class="text-greycode-light-blue">Services</span></h3>
-    <p class="text-lg mt-5 mb-8 text-center mx-5">We provide world class, end to end solutions for the Internet of Things IoT, our Connected Technologies, Sensors and Platforms enable new solutions for government & enterprise customers, energy management & efficiency, smart cities, connected homes , buildings and more</p>
-      <div class="flex justify-center space-x-8 p-4">
-        <a href="#" class="gradient-text hover:text-blue-600">SMARTER FARMER</a>
-          <span class="separator"></span>
-        <a href="#" class="gradient-text hover:text-blue-600">MANUFACTURING</a>
-          <span class="separator"></span>
-        <a href="#" class="gradient-text hover:text-blue-600">MINING, OIL & GAS</a>
-          <span class="separator"></span>
-        <a href="#" class="gradient-text hover:text-blue-600">SMART BUILDINGS</a>
-          <span class="separator"></span>
-        <a href="#" class="gradient-text hover:text-blue-600">TRACKING</a>
-  </div>
-  <div>
-    <button class="gradient-outline-button capitalize">View More</button>
-  </div>
-    <div class="flex justify-center gap-10 mt-5">
-      <img src="{{ asset('images/Screenshot 2025-09-29 151719.png')}}" 
-         alt="First placeholder image"
-         class="rounded-xl">
-        <img src="{{ asset('images/Screenshot 2025-09-29 151733.png')}}" 
-         alt="Second placeholder image"
-         class="rounded-xl">
+<section class="relative overflow-hidden">
+    <!-- Background Container -->
+    <div class="absolute inset-0 z-0">
+        <!-- Background Color -->
+        <div class="absolute inset-0 bg-greycode-light-gray"></div>
+        <!-- Background Image -->
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+             style="background-image: url('{{ asset('images/Untitled-1_0004_Layer-4.png') }}');">
+        </div>
     </div>
-    <h4 class="text-center text-2xl p-7">Let's feed the future</h4>
-    <p class="text-center p-7 lg:px-40">Today, smart farming has become a reality. With the help of IoT technology and advanced machine learning algorithms, farmers can now monitor the health of their crops</p>
-    <div>
-    <button class="gradient-outline-button capitalize">See More</button>
-  </div>
-  </div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 py-16 relative z-10">
+        <h3 class="text-5xl font-bold mb-4 text-center mt-10">Our <span class="text-greycode-light-blue">Services</span></h3>
+        <p class="text-lg mt-5 mb-8 text-center mx-5 max-w-4xl mx-auto">
+            We provide world class, end to end solutions for the Internet of Things IoT, our Connected Technologies, Sensors and Platforms enable new solutions for government & enterprise customers, energy management & efficiency, smart cities, connected homes , buildings and more
+        </p>
+        
+        <!-- Service Links -->
+        <div class="flex justify-center space-x-8 p-4 flex-wrap">
+            <a href="#" class="gradient-text hover:text-blue-600">SMARTER FARMER</a>
+            <span class="separator"></span>
+            <a href="#" class="gradient-text hover:text-blue-600">MANUFACTURING</a>
+            <span class="separator"></span>
+            <a href="#" class="gradient-text hover:text-blue-600">MINING, OIL & GAS</a>
+            <span class="separator"></span>
+            <a href="#" class="gradient-text hover:text-blue-600">SMART BUILDINGS</a>
+            <span class="separator"></span>
+            <a href="#" class="gradient-text hover:text-blue-600">TRACKING</a>
+        </div>
+        
+        <!-- View More Button -->
+        <div class="text-center mt-8">
+            <button class="gradient-outline-button capitalize px-8 py-3">View More</button>
+        </div>
+
+        <!-- Images -->
+        <div class="flex justify-center gap-10 mt-12 flex-wrap">
+            <img src="{{ asset('images/Screenshot 2025-09-29 151719.png')}}" 
+                 alt="First placeholder image"
+                 class="rounded-xl w-full max-w-md">
+            <img src="{{ asset('images/Screenshot 2025-09-29 151733.png')}}" 
+                 alt="Second placeholder image"
+                 class="rounded-xl w-full max-w-md">
+        </div>
+
+        <!-- Let's feed the future section -->
+        <div class="text-center mt-12">
+            <h4 class="text-2xl p-7 font-semibold">Let's feed the future</h4>
+            <p class="text-lg p-7 lg:px-40 max-w-4xl mx-auto leading-relaxed">
+                Today, smart farming has become a reality. With the help of IoT technology and advanced machine learning algorithms, farmers can now monitor the health of their crops
+            </p>
+        </div>
+
+        <!-- See More Button -->
+        <div class="text-center mt-6">
+            <button class="gradient-outline-button capitalize px-8 py-3">See More</button>
+        </div>
+    </div>
 </section>
 <section class="flex flex-col items-center justify-center text-center mt-10 mb-10">
   <h3 class="text-5xl font-bold mb-4 text-center mt-10">
