@@ -49,7 +49,7 @@
         <div class="absolute inset-0 bg-greycode-light-gray"></div>
         <!-- Background Image -->
         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
-             style="background-image: url('{{ asset('images/Untitled-1_0004_Layer-4.png') }}');">
+             style="background-image: url('{{ asset('images/Untitled-1_0006_Layer-2.png') }}');">
         </div>
     </div>
 
