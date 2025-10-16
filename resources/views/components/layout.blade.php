@@ -25,6 +25,7 @@
     </style> --}}
 </head>
 <body>
+  <x-preloader />
   <x-navbar />
   <main class=" bg-greycode-light-gray">
     {{ $slot }}

@@ -132,11 +132,12 @@
         </div>
     </div>
 </section>
-<section>
+<x-comment-section />
+<section class="bg-black py-8 text-white">
     <div class="container mx-auto px-4 py-6 lg:px-40">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="flex flex-col justify-center">
-                <h5 class="text-2xl font-semibold lg:px-30"><span class="text-greycode-light-blue">Subscribe</span> to get more content News and opinion on everything Internet of Things</h5>
+                <h5 class="text-2xl font-semibold lg:px-30"><span class="text-greycode-mid-blue">Subscribe</span> to get more content News and opinion on everything Internet of Things</h5>
             </div>
             <div>
                 <form action="" method="POST">
@@ -146,10 +147,21 @@
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" class="bg-white border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-greycode-light-blue mb-4">
                 <div>
-                    <button class="gradient-outline-button capitalize">Subscribe</button>
+                    <button class="bg-greycode-light-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105 capitalize">Subscribe</button>
                 </div>
             </form>
         </div>
     </div>
 </section>
 </x-layout>
+
+{{-- In your blog view --}}
+{{-- <section class="w-full max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Comments ({{ $comments->count() }})</h2>
+    
+    <div class="space-y-6">
+        @foreach($comments as $comment)
+            @include('components.comment', ['comment' => $comment])
+        @endforeach
+    </div>
+</section> --}}

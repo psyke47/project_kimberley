@@ -1,4 +1,6 @@
+
 <x-layout>
+    
   <section class="text-gray-600 body-font lg:min-h-screen flex items-center relative overflow-hidden">
     <!-- Background Container -->
     <div class="absolute inset-0 z-0">
@@ -39,7 +41,7 @@
     </div>
   </div>
   <div class="container mx-auto px-5 py-5 lg:px-40">
-    <p class="text-lg mt-5 mb-8 text-center mx-5"> The Internet of Things or IoT refers to a network of devices wherein a variety of machines, buildings and other things are connected. These devices are capable of sending & receiving data from each other without requiring human-to-human or human-to-computer interaction.</p>s
+    <p class="text-lg mt-5 mb-8 text-center max-w-4xl mx-auto"> The Internet of Things or IoT refers to a network of devices wherein a variety of machines, buildings and other things are connected. These devices are capable of sending & receiving data from each other without requiring human-to-human or human-to-computer interaction.</p>
   </div>
 </section>
 <section class="relative overflow-hidden">
@@ -48,29 +50,29 @@
         <!-- Background Color -->
         <div class="absolute inset-0 bg-greycode-light-gray"></div>
         <!-- Background Image -->
-        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
              style="background-image: url('{{ asset('images/Untitled-1_0006_Layer-2.png') }}');">
         </div>
     </div>
 
     <!-- Content -->
     <div class="container mx-auto px-4 py-16 relative z-10">
-        <h3 class="text-5xl font-bold mb-4 text-center mt-10">Our <span class="text-greycode-light-blue">Services</span></h3>
-        <p class="text-lg mt-5 mb-8 text-center mx-5 max-w-4xl mx-auto">
+        <h3 class="text-5xl font-bold mb-4 text-center mt-10">Our <span class="text-greycode-light-blue hero-underline">Services</span></h3>
+        <p class="text-lg mt-5 mb-8 text-center max-w-4xl mx-auto">
             We provide world class, end to end solutions for the Internet of Things IoT, our Connected Technologies, Sensors and Platforms enable new solutions for government & enterprise customers, energy management & efficiency, smart cities, connected homes , buildings and more
         </p>
         
         <!-- Service Links -->
         <div class="flex justify-center space-x-8 p-4 flex-wrap">
-            <a href="#" class="gradient-text hover:text-blue-600">SMARTER FARMER</a>
+            <a href="#" class="gradient-text hover:text-blue-600 hover:scale-120">SMARTER FARMER</a>
             <span class="separator"></span>
-            <a href="#" class="gradient-text hover:text-blue-600">MANUFACTURING</a>
+            <a href="#" class="gradient-text hover:text-blue-600 hover:scale-120">MANUFACTURING</a>
             <span class="separator"></span>
-            <a href="#" class="gradient-text hover:text-blue-600">MINING, OIL & GAS</a>
+            <a href="#" class="gradient-text hover:text-blue-600 hover:scale-120">MINING, OIL & GAS</a>
             <span class="separator"></span>
-            <a href="#" class="gradient-text hover:text-blue-600">SMART BUILDINGS</a>
+            <a href="#" class="gradient-text hover:text-blue-600 hover:scale-120">SMART BUILDINGS</a>
             <span class="separator"></span>
-            <a href="#" class="gradient-text hover:text-blue-600">TRACKING</a>
+            <a href="#" class="gradient-text hover:text-blue-600 hover:scale-120">TRACKING</a>
         </div>
         
         <!-- View More Button -->
@@ -113,7 +115,7 @@
     <div class="card bg-base-100 w-96 shadow-xl">
       <figure class="px-10 pt-10">
         <img
-          src="{{ asset('images/pexels-mart-production-7088524.jpg') }}"
+          src="{{ asset('images/pexels-nc-farm-bureau-mark-2889442.jpg') }}"
           alt="Shoes"
           class="rounded-xl" />
       </figure>
@@ -127,12 +129,12 @@
     <div class="card bg-base-100 w-96 shadow-xl">
       <figure class="px-10 pt-10">
         <img
-          src="{{ asset('images/your-image-2.jpg') }}"
+          src="{{ asset('images/pexels-life-of-pix-2391.jpg') }}"
           alt="Manufacturing"
           class="rounded-xl" />
       </figure>
       <div class="card-body items-center text-center">
-        <h2 class="card-title">Manufacturing</h2>
+        <h2 class="card-title text-lg">Manufacturing</h2>
         <p>IoT solutions in manufacturing improve efficiency and reduce downtime through predictive maintenance...</p>
       </div>
     </div>
@@ -141,12 +143,12 @@
     <div class="card bg-base-100 w-96 shadow-xl">
       <figure class="px-10 pt-10">
         <img
-          src="{{ asset('images/your-image-3.jpg') }}"
+          src="{{ asset('images/pexels-sevenstormphotography-443383.jpg') }}"
           alt="Buildings"
           class="rounded-xl" />
       </figure>
       <div class="card-body items-center text-center">
-        <h2 class="card-title">Smart Buildings</h2>
+        <h2 class="card-title text-lg">Smart Buildings</h2>
         <p>Intelligent building management systems optimize energy consumption and enhance security...</p>
       </div>
     </div>
