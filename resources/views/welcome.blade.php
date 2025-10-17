@@ -64,13 +64,13 @@
         
         <!-- Service Links -->
         <div class="flex justify-center space-x-8 p-4 flex-wrap">
-            <a href="#" class="gradient-text hover:text-blue-600 hover:scale-120">SMARTER FARMER</a>
+            <a href="/smart-farming" class="gradient-text hover:text-blue-600 hover:scale-120">SMARTER FARMING</a>
             <span class="separator"></span>
-            <a href="#" class="gradient-text hover:text-blue-600 hover:scale-120">MANUFACTURING</a>
+            <a href="/manufacturing" class="gradient-text hover:text-blue-600 hover:scale-120">MANUFACTURING</a>
             <span class="separator"></span>
-            <a href="#" class="gradient-text hover:text-blue-600 hover:scale-120">MINING, OIL & GAS</a>
+            <a href="/mining-oil-gas" class="gradient-text hover:text-blue-600 hover:scale-120">MINING, OIL & GAS</a>
             <span class="separator"></span>
-            <a href="#" class="gradient-text hover:text-blue-600 hover:scale-120">SMART BUILDINGS</a>
+            <a href="/smart-building" class="gradient-text hover:text-blue-600 hover:scale-120">SMART BUILDINGS</a>
             <span class="separator"></span>
             <a href="#" class="gradient-text hover:text-blue-600 hover:scale-120">TRACKING</a>
         </div>
@@ -176,7 +176,7 @@
             <!-- Centered Diagonal Image - Much Larger -->
             <div class="relative z-0 transform rotate-0 scale-125">
                 <img 
-                    src="{{ asset('images/Sample-removebg-preview.png') }}" 
+                    src="{{ asset('images/greycode-board.png') }}" 
                     alt="IoT Development Board" 
                     class="w-80 h-80 lg:w-96 lg:h-96 xl:w-[500px] xl:h-[500px] object-contain mx-auto filter drop-shadow-2xl"
                 >

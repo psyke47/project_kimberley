@@ -21,25 +21,25 @@
     <div class="absolute left-0 top-full mt-2 w-56 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform group-hover:translate-y-0 translate-y-2 z-50 border border-gray-200">
         <div class="py-2">
             <!-- Dropdown Item 1 -->
-            <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 group/item">
+            <a href="/smart-farming" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 group/item">
                 <i class="fas fa-tractor mr-3 text-greycode-light-blue group-hover/item:text-white"></i>
                 <span>Smart Farming</span>
             </a>
             
             <!-- Dropdown Item 2 -->
-            <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 group/item">
+            <a href="/manufacturing" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 group/item">
                 <i class="fas fa-industry mr-3 text-greycode-light-blue group-hover/item:text-white"></i>
                 <span>Manufacturing</span>
             </a>
             
             <!-- Dropdown Item 3 -->
-            <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 group/item">
+            <a href="/mining-oil-gas" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 group/item">
                 <i class="fas fa-oil-well mr-3 text-greycode-light-blue group-hover/item:text-white"></i>
                 <span>Mining, Oil & Gas</span>
             </a>
             
             <!-- Dropdown Item 4 -->
-            <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 group/item">
+            <a href="/smart-building" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 group/item">
                 <i class="fas fa-building mr-3 text-greycode-light-blue group-hover/item:text-white"></i>
                 <span>Smart Buildings</span>
             </a>
@@ -59,7 +59,7 @@
         </div>
     </div>
 </li>
-            <li><a href="/careers" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Careers</a></li>
+            <li><a href="#" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Shop</a></li>
             <li><a href="/contact" class="text-greycode-light-blue hover:text-gray-400 transition-colors duration-300 py-1">Contact</a></li>
         </ul>
         
