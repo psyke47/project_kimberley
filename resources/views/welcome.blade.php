@@ -112,43 +112,43 @@
   
   <div class="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
     <!-- Card 1 -->
-    <div class="card bg-base-100 w-96 shadow-xl">
+    <div class="card bg-base-100 w-96 shadow-md shadow-greycode-light-blue">
       <figure class="px-10 pt-10">
         <img
           src="{{ asset('images/pexels-nc-farm-bureau-mark-2889442.jpg') }}"
           alt="Shoes"
           class="rounded-xl" />
       </figure>
-      <div class="card-body items-center text-center">
-        <h2 class="card-title">Smart Farming</h2>
+      <div class="card-body items-center text-center p-3">
+        <h2 class="card-title text-lg my-2.5 font-semibold text-greycode-light-blue">Smart Farming</h2>
         <p>Rather than relying on old-fashioned and imprecise tools like their own eyes and noses, farmers have begun using IoT sensors...</p>
       </div>
     </div>
 
     <!-- Card 2 -->
-    <div class="card bg-base-100 w-96 shadow-xl">
+    <div class="card bg-base-100 w-96 shadow-md shadow-greycode-light-blue">
       <figure class="px-10 pt-10">
         <img
           src="{{ asset('images/pexels-life-of-pix-2391.jpg') }}"
           alt="Manufacturing"
           class="rounded-xl" />
       </figure>
-      <div class="card-body items-center text-center">
-        <h2 class="card-title text-lg">Manufacturing</h2>
+      <div class="card-body items-center text-center p-3">
+        <h2 class="card-title text-lg  my-2.5 font-semibold text-greycode-light-blue">Manufacturing</h2>
         <p>IoT solutions in manufacturing improve efficiency and reduce downtime through predictive maintenance...</p>
       </div>
     </div>
 
     <!-- Card 3 -->
-    <div class="card bg-base-100 w-96 shadow-xl">
+    <div class="card bg-base-100 w-96 shadow-md shadow-greycode-light-blue">
       <figure class="px-10 pt-10">
         <img
           src="{{ asset('images/pexels-sevenstormphotography-443383.jpg') }}"
           alt="Buildings"
           class="rounded-xl" />
       </figure>
-      <div class="card-body items-center text-center">
-        <h2 class="card-title text-lg">Smart Buildings</h2>
+      <div class="card-body items-center text-center p-3">
+        <h2 class="card-title text-lg  my-2.5 font-semibold text-greycode-light-blue">Smart Buildings</h2>
         <p>Intelligent building management systems optimize energy consumption and enhance security...</p>
       </div>
     </div>

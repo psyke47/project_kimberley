@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="bg-cover bg-center bg-no-repeat bg-white" style="background-image: url('{{ asset('images/Untitled-1_0001_Layer-7.png') }}');">
+   <div class="bg-cover bg-center bg-no-repeat bg-white mining-ribbon">
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 flex items-center">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div class="px-4 space-y-6">
@@ -75,4 +75,31 @@
             </div>
         </section>
     </div>
+    
 </x-layout>
+
+<style>
+    .mining-ribbon {
+    position: relative;
+    overflow: hidden; /* or overflow: visible if you want it to extend beyond */
+}
+
+.mining-ribbon::before {
+    content: '';
+    position: absolute;
+    top: -90%;
+    left: -30%;
+    width: 200%;
+    height: 140%;
+    background-image: url('{{ asset('images/Untitled-1_0001_Layer-7.png') }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    transform-origin: center;
+ 
+    pointer-events: none;
+    opacity: 0.5;
+}
+</style>
+

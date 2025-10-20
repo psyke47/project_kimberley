@@ -37,3 +37,7 @@ Route::get('/mining-oil-gas', function () {
 Route::get('/smart-farming', function () {
     return view('smart-farming');
 });
+
+Route::get('/smart-home', function () {
+    return view('smart-home');
+});

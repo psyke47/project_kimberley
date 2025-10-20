@@ -47,5 +47,68 @@
                 </div>
             </div>
         </section>
+    <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-8">
+    <h2 class="text-center text-4xl lg:text-5xl font-bold mb-8">Benefits of our solution</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <!-- Card 1 -->
+        <div class="card bg-white w-full h-80 shadow-xl border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition-all duration-300">
+            <div class="card-body p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="card-title text-xl font-bold mb-4 text-greycode-dark-blue">Energy Efficiency</h3>
+                    <p class="text-gray-600 leading-relaxed">optimize the use of resources like electricity and water, leading to significant energy savings.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card bg-white w-full h-80 shadow-xl border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition-all duration-300">
+            <div class="card-body p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="card-title text-xl font-bold mb-4 text-greycode-dark-blue">Enhanced Security System</h3>
+                    <p class="text-gray-600 leading-relaxed">Our integrated surveillance systems, access control, and alarm systems are not only advanced but also manageable remotely, offering immediate alerts and proactive responses to security issues.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card bg-white w-full h-80 shadow-xl border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition-all duration-300">
+            <div class="card-body p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="card-title text-xl font-bold mb-4 text-greycode-dark-blue">Remote Monitorine</h3>
+                    <p class="text-gray-600 leading-relaxed">monitor and control various aspects of the farm remotely. This includes checking the status of crops and livestock and controlling machinery from any location.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card bg-white w-full h-80 shadow-xl border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition-all duration-300">
+            <div class="card-body p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="card-title text-xl font-bold mb-4 text-greycode-dark-blue">Increased Crop Yields</h3>
+                    <p class="text-gray-600 leading-relaxed">Our solution is designed to help you identify the optimal conditions for each stage of crop growth, from planting to harvest. This precision approach ensures your crops thrive, resulting in significantly improved yields and a thriving farm</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card bg-white w-full h-80 shadow-xl border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition-all duration-300">
+            <div class="card-body p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="card-title text-xl font-bold mb-4 text-greycode-dark-blue">Improved Quality</h3>
+                    <p class="text-gray-600 leading-relaxed">Through meticulous monitoring of crops and livestock, ensure the production of superior quality produce that commands premium prices,</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card bg-white w-full h-80 shadow-xl border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition-all duration-300">
+            <div class="card-body p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="card-title text-xl font-bold mb-4 text-greycode-dark-blue">Automated Irrigation</h3>
+                    <p class="text-gray-600 leading-relaxed">Implement automated irrigation systems for precise water management, ensuring optimal crop hydration with minimal waste.</p>
+                </div>
+            </div>
+        </div>
+        </section>
     </div>
 </x-layout>

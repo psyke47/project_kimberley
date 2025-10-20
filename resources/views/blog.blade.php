@@ -132,7 +132,7 @@
         </div>
     </div>
 </section>
-<x-comment-section />
+{{-- <x-comment-section /> --}}
 <section class="bg-black py-8 text-white">
     <div class="container mx-auto px-4 py-6 lg:px-40">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
