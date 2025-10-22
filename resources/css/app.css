@@ -6,6 +6,8 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   /* Define your custom colors with the --color- prefix */
   --color-greycode-light-blue: #2C7DE6;
@@ -31,6 +33,22 @@ body {
     color: transparent;
     font-size: inherit;
     font-weight: inherit;
+}
+@media (prefers-color-scheme: dark) {
+    .dark .gradient-text {
+        background-image: none;
+        -webkit-background-clip: unset;
+        background-clip: unset;
+        color: white;
+    }
+}
+
+/* Fallback for class-based dark mode */
+.dark .gradient-text {
+    background-image: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    color: white;
 }
 
 /* Blue Interpunct Separator */

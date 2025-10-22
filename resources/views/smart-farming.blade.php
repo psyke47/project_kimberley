@@ -3,7 +3,7 @@
     <x-slot name="meta_description">Discover how our Smart Farming solutions leverage IoT and AI to optimize agricultural practices, enhance crop yields, and promote sustainable farming.</x-slot>
 
     {{-- White background wrapper --}}  
-    <div class="bg-white min-h-screen">
+    <div class="bg-white in-dark:bg-black min-h-screen">
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 flex items-center">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div class="px-4 space-y-6">
@@ -18,7 +18,7 @@
                     </button>
                 </div>
                 <div class="px-4">
-                    <img src="{{ asset('images/65973c8bb5f529de9b164ffe_smart farming 2-p-800.png') }}">
+                    <img src="{{ asset('images/smart-farming.jpg') }}" alt="smart farming" class="w-full">
                 </div>
             </div>
         </section>
@@ -28,7 +28,7 @@
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div class="px-4">
-                    <img src="{{ asset('images/659c2e52688c6d225291f386_mining_excavator-removebg-preview.png')}}" alt="">
+                    <img src="{{ asset('images/mining_excavator.jpg')}}" alt="smart soil monitoring">
                 </div>
                 <div class="px-4 space-y-6">
                     <h2 class="text-4xl font-bold">Soil Monitoring </h2>
@@ -43,7 +43,7 @@
                     <p>Elevate your livestock management with our remote tracking and monitoring system. This feature enables you to keep a constant, vigilant eye on the health, location, and behavior of your animals.</p>
                 </div>
                 <div>
-                    <img src="{{ asset('images/659960e26966bff8546a31cc_cow-p-500.png')}}" alt="">
+                    <img src="{{ asset('images/Livestock-Monitoring.jpg')}}" alt="">
                 </div>
             </div>
         </section>

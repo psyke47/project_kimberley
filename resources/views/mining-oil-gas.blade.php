@@ -12,7 +12,7 @@
                     </p>
                 </div>
                 <div>
-                    <img src="{{ asset('images/65bbc75ce1ded032257161de_659bcaf47dcbf84442280072_smart__minne-p-500-removebg-preview.png')}}" alt="smart mining" class="w-full max-w-md">
+                    <img src="{{ asset('images/smart-mining.jpg')}}" alt="smart mining" class="w-full max-w-md">
                 </div>
             </div>
         </section>
@@ -24,7 +24,7 @@
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div class="px-4">
-                    <img src="{{ asset('images/659d0679c1d409d891aabe3d_minning  sfety-p-500.png')}}" alt="" class="w-full max-w-md">
+                    <img src="{{ asset('images/mining-safety.jpg')}}" alt="mining safety" class="w-full max-w-md">
                 </div>
                 <div class="px-4 space-y-6">
                     <p class="leading max-w-4xl">Equipped with wearable sensors, environmental detectors, and advanced analytics, our solution not only keeps a watchful eye on crucial factors like air quality, temperature, and gas levels but also tracks miners' locations. In the event of an emergency, our system instantly sends alerts, enabling swift responses to mitigate risks. By prioritizing safety, we empower mining operations to protect their most valuable assets - their workforce</p>
@@ -37,7 +37,7 @@
                     <p class="leading max-w-4xl">Fleet Management.With our solution, harness the power of real-time tracking to monitor diagnostic data, pinpoint precise locations, and optimize the performance of trucks and haulage equipment, effectively reducing congestion and minimizing wait times.</p>
                 </div>
                 <div>
-                    <img src="{{ asset('images/659c2e52688c6d225291f386_mining_excavator-removebg-preview.png')}}" alt="">
+                    <img src="{{ asset('images/mining_excavator.jpg')}}" alt="mining excavator" class="w-full max-w-md">
                 </div>
             </div>
         </section>

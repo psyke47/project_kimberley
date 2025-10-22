@@ -3,7 +3,7 @@
     <x-slot name="meta_description">Explore our Smart Home Solutions that enhance security, convenience, and energy efficiency through advanced IoT technology.</x-slot>
 
     {{-- White background wrapper --}}
-    <div class="bg-white min-h-screen">
+    <div class="bg-white in-dark:bg-greycode-gray min-h-screen">
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8">
             <h2 class="text-4xl lg:text-5xl font-bold mb-4"><span class="text-greycode-light-blue">Smart</span> Living</h2>
             <p class="text-left leading-relaxed max-w-3xl">What are smart city solutions? They represent the integration of digital and communication technologies into urban management, designed to enhance urban living. This integration facilitates efficient governance, improves mobility, promotes energy efficiency, and develops advanced infrastructure. Additionally, smart city solutions contribute to environmental sustainability, enable data-driven decision-making, increase public safety, foster inclusive citizen engagement, and streamline effective urban planning</p>
@@ -33,12 +33,12 @@
             </div>
         </section>
 
-        <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-8">
+        <section class="container mx-auto px-10 sm:px-8 lg:px-20 py-8 space-y-8">
             <div class="text-center mb-8">
                 <h2 class="font-bold text-4xl lg:text-5xl">Benefits of our solution</h2>
             </div>
             {{-- four cards --}}
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10 lg:gap-16">
                 <div class="card bg-white w-full h-96 shadow-xl border-2 border-gray-200 rounded-2xl hover:shadow-2xl transition-all duration-300 p-6 flex flex-col justify-between">
                     {{-- Card 1 --}}
                     <div class="flex flex-col justify-between h-full">
