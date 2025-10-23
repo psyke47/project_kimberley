@@ -5,6 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>{{ $title ?? 'Grey Code' }}</title>
@@ -14,6 +16,25 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/images/favicon/site.webmanifest">
+
+    {{-- Scrolling Aninmation --}}
+    <style>
+      @keyframes appear {
+          from {
+            opacity: 0;
+            clip-path: inset(100% 100% 0 0);
+          }
+          to {
+            opacity: 1;
+            clip-path: inset(0 0 0 0);
+          }
+        }
+        .brick {
+          animation: appear linear;
+          animation-timeline: view();
+          animation-range: entry 0% cover 40%;}
+  
+    </style>
 </head>
 <body>
   <x-preloader />
@@ -23,5 +44,12 @@
   </main>
   <x-footer />
   <script type="module" src="/resources/js/app.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Initialize AOS -->
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 
 <x-layout>
-<section class="text-gray-600 in-dark:text-white body-font min-h-screen flex items-center relative overflow-hidden">
+<section class="text-gray-600 in-dark:text-white body-font min-h-screen flex items-center relative overflow-hidden view">
     <!-- Background Layers -->
     <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 bg-greycode-light-gray in-dark:bg-gray-800"></div>
@@ -11,7 +11,7 @@
     </div>
 
     <!-- Content Container -->
-    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 py-8 md:py-12 relative z-10">
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 py-8 md:py-12 relative z-10 view-brick">
         <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 lg:gap-16">
             <!-- Text Content -->
             <div class="flex-1 w-full md:w-auto text-center md:text-left">
@@ -34,33 +34,49 @@
     </div>
 </section>
 <section class="dark:bg-gray-800 dark:text-white py-8 sm:py-12 md:py-16">
-    <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-center mt-10 px-4">
+    <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-center mt-10 px-4" 
+         data-aos="fade-down" 
+         data-aos-duration="800">
         What is <span class="text-greycode-light-blue">IOT</span>
     </h3>
     
     <!-- Image Grid - Now horizontal on all devices -->
     <div class="rounded-4xl p-4 sm:p-6 md:p-8 shadow-3xl mx-4 sm:mx-8 md:mx-auto max-w-[90%] sm:max-w-3xl md:max-w-4xl" 
-         style="background: #2C7DE6; background: linear-gradient(289deg, #2c7de6 25%, #7986A2 84%);">
+         style="background: #2C7DE6; background: linear-gradient(289deg, #2c7de6 25%, #7986A2 84%);"
+         data-aos="zoom-in" 
+         data-aos-duration="1000"
+         data-aos-delay="200">
         <div class="flex flex-row justify-center items-center gap-3 sm:gap-6 md:gap-8 flex-wrap">
             <!-- Smaller base size for mobile -->
             <img src="{{ asset('images/icons-01.png')}}" 
                  class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300" 
-                 alt="IoT Icon 1">
+                 alt="IoT Icon 1"
+                 data-aos="fade-up" 
+                 data-aos-delay="400">
             <img src="{{ asset('images/icons-02.png')}}" 
                  class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-bounce transition-transform duration-300" 
-                 alt="IoT Icon 2">
+                 alt="IoT Icon 2"
+                 data-aos="fade-up" 
+                 data-aos-delay="500">
             <img src="{{ asset('images/icons-03.png')}}" 
                  class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-bounce transition-transform duration-300" 
-                 alt="IoT Icon 3">
+                 alt="IoT Icon 3"
+                 data-aos="fade-up" 
+                 data-aos-delay="600">
             <img src="{{ asset('images/icons-04.png')}}" 
                  class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300" 
-                 alt="IoT Icon 4">
+                 alt="IoT Icon 4"
+                 data-aos="fade-up" 
+                 data-aos-delay="700">
         </div>
     </div>
 
-    <!-- Text Content - unchanged -->
+    <!-- Text Content -->
     <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-40 mt-8 sm:mt-12">
-        <p class="text-sm sm:text-base md:text-lg leading-5 sm:leading-6 md:leading-7 mt-5 mb-8 text-center max-w-3xl sm:max-w-4xl mx-auto px-4">
+        <p class="text-sm sm:text-base md:text-lg leading-5 sm:leading-6 md:leading-7 mt-5 mb-8 text-center max-w-3xl sm:max-w-4xl mx-auto px-4"
+           data-aos="fade-up" 
+           data-aos-delay="800"
+           data-aos-duration="600">
             The Internet of Things or IoT refers to a network of devices wherein a variety of machines, buildings and other things are connected. These devices are capable of sending & receiving data from each other without requiring human-to-human or human-to-computer interaction.
         </p>
     </div>
@@ -148,14 +164,14 @@
     </div>
 </section>
 <section class="flex flex-col items-center justify-center text-center mt-10 mb-10 dark:bg-gray-800 dark:text-white">
-  <h3 class="text-5xl font-bold mb-4 text-center mt-10">
+  <h3 class="text-5xl font-bold mb-4 text-center mt-10" data-aos="fade-down">
     Success <span class="text-greycode-light-blue">Stories</span>
   </h3>
-  <p class="text-lg mb-8">Get to know more about the work we do.</p>
+  <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="200">Get to know more about the work we do.</p>
   
   <div class="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
     <!-- Card 1 -->
-    <div class="card bg-base-100 w-96 shadow-md shadow-greycode-light-blue">
+    <div class="card bg-base-100 w-96 shadow-md shadow-greycode-light-blue" data-aos="fade-right" data-aos-delay="300">
       <figure class="px-10 pt-10">
         <img
           src="{{ asset('images/pexels-nc-farm-bureau-mark-2889442.jpg') }}"
@@ -169,7 +185,7 @@
     </div>
 
     <!-- Card 2 -->
-    <div class="card bg-base-100 w-96 shadow-md shadow-greycode-light-blue">
+    <div class="card bg-base-100 w-96 shadow-md shadow-greycode-light-blue" data-aos="fade-up" data-aos-delay="400">
       <figure class="px-10 pt-10">
         <img
           src="{{ asset('images/pexels-life-of-pix-2391.jpg') }}"
@@ -183,7 +199,7 @@
     </div>
 
     <!-- Card 3 -->
-    <div class="card bg-base-100 w-96 shadow-md shadow-greycode-light-blue">
+    <div class="card bg-base-100 w-96 shadow-md shadow-greycode-light-blue" data-aos="fade-left" data-aos-delay="500">
       <figure class="px-10 pt-10">
         <img
           src="{{ asset('images/pexels-sevenstormphotography-443383.jpg') }}"

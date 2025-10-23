@@ -1,7 +1,14 @@
 <nav class="flex items-center justify-between py-2 px-4 lg:px-20 relative min-h-[60px] bg-white dark:bg-gray-800 transition-colors duration-300" role="navigation">
     <!-- Logo -->
     <a href="/" class="flex items-center">
-        <img src="{{ asset('images/Asset 1 1.png') }}" alt="Logo" class="h-8 w-auto object-contain" width="120" height="32" loading="lazy">
+    <!-- Light mode logo -->
+        <img src="{{ asset('images/Asset 1 1.png') }}" alt="Logo" 
+            class="h-8 w-auto object-contain dark:hidden" 
+            width="120" height="32" loading="lazy">
+    <!-- Dark mode logo (white version) -->
+        <img src="{{ asset('images/greycode-white-logo.png') }}" alt="Logo" 
+            class="h-8 w-auto object-contain hidden dark:block" 
+            width="120" height="32" loading="lazy">
     </a>
 
     <!-- Desktop Navigation -->
@@ -56,7 +63,7 @@
         </ul>
 
         <!-- Dark Mode Toggle -->
-        <button id="theme-toggle" type="button" class="py-1.5 px-3 m-1 text-center bg-greycode-light-blue border dark:bg-transparent border-gray-300 rounded-md text-white hover:bg-gray-800 transition-colors duration-300 dark:bg-blue-600 dark:hover:bg-blue-700">
+        <button id="theme-toggle" type="button" class="py-1.5 px-3 m-1 text-center bg-transparent dark:bg-transparent  rounded-md text-greycode-light-blue hover:bg-gray-800 transition-colors duration-300 dark:bg-blue-600 dark:hover:bg-blue-700">
             <svg id="theme-toggle-dark-icon" class="w-5 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
             </svg>
