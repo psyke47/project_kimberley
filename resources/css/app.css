@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Penumbra+Sans:wght@300;400;600;700&display=swap');
+
 @import "tailwindcss";
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   /* Define your custom colors with the --color- prefix */
@@ -14,10 +18,13 @@
 }
 
 :root {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    --font-sans: 'Penumbra Sans', 'League Spartan', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
+body {
+    font-family: 'Penumbra Sans', 'League Spartan', sans-serif;
+}
 /* Gradient Text Styles */
 .gradient-text {
     background-image: linear-gradient(to right, black, var(--color-greycode-mid-blue), var(--color-greycode-gray));
@@ -26,6 +33,22 @@
     color: transparent;
     font-size: inherit;
     font-weight: inherit;
+}
+@media (prefers-color-scheme: dark) {
+    .dark .gradient-text {
+        background-image: none;
+        -webkit-background-clip: unset;
+        background-clip: unset;
+        color: white;
+    }
+}
+
+/* Fallback for class-based dark mode */
+.dark .gradient-text {
+    background-image: none;
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    color: white;
 }
 
 /* Blue Interpunct Separator */
@@ -38,7 +61,7 @@
 .gradient-outline-button {
     /* Basic button styling */
     padding: 12px 32px;
-    background: transparent;
+    background: var(--color-greycode-light-gray);
     color: #333; /* Text color - adjust as needed */
     border: none;
     border-radius: 24px;
@@ -46,6 +69,7 @@
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    text-transform: capitalize;
     
     /* Create gradient outline using pseudo-element */
     &::before {

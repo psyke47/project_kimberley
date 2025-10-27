@@ -1,0 +1,131 @@
+<x-layout>
+    <x-slot name="title">Smart Mining - Greycode</x-slot>
+    <x-slot name="meta_description">Harness the power of IoT, AI, and automation to make mining operations safer, more efficient, and more environmentally responsible.</x-slot>
+
+   <div class="bg-cover bg-center bg-no-repeat bg-white dark:bg-gray-800 mining-ribbon">
+        <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 flex items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="px-4 space-y-6" data-aos="fade-right" data-aos-duration="600">
+                    <h2 class="text-4xl lg:text-5xl font-bold mb-4 dark:text-white">
+                        <span class="text-greycode-light-blue">Smart</span> Mining
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed dark:text-gray-300">
+                        Harness the power of IoT, AI, and automation to
+                      Make mining operations safer, more efficient, and more environmentally responsible while improving productivity and sustainability.  
+                    </p>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+                    <img src="{{ asset('images/smart-mining.jpg')}}" alt="smart mining" class="w-full max-w-md">
+                </div>
+            </div>
+        </section>
+        
+        <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8">
+            <div class="px-6 sm:px-8 lg:px-16 py-8 bg-greycode-gray dark:bg-gray-700 rounded-4xl opacity-90" 
+                 data-aos="fade-up" data-aos-duration="600">
+                <p class="leading dark:text-gray-300">What is smart mining? :Smart mining is an innovative approach to resource extraction that leverages cutting-edge technologies like the Internet of Things (IoT), Artificial Intelligence (AI), automation, and data analytics to significantly improve efficiency, safety, and environmental sustainability in mining operations. This modern methodology transforms traditional mining practices by automating processes, optimizing decision-making through real-time data analysis, and ensuring higher safety standards through remote and autonomous operations. It represents a significant shift towards more responsible and technologically advanced mining practices, focusing on reducing environmental impact and enhancing operational efficiency</p>
+            </div>
+        </section>
+        
+        <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="px-4" data-aos="fade-right" data-aos-duration="600">
+                    <img src="{{ asset('images/mining-safety.jpg')}}" alt="mining safety" class="w-full max-w-md">
+                </div>
+                <div class="px-4 space-y-6" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+                    <p class="leading max-w-4xl dark:text-gray-300">Equipped with wearable sensors, environmental detectors, and advanced analytics, our solution not only keeps a watchful eye on crucial factors like air quality, temperature, and gas levels but also tracks miners' locations. In the event of an emergency, our system instantly sends alerts, enabling swift responses to mitigate risks. By prioritizing safety, we empower mining operations to protect their most valuable assets - their workforce</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="px-4 space-y-6" data-aos="fade-right" data-aos-duration="600">
+                    <p class="leading max-w-4xl dark:text-gray-300">Fleet Management.With our solution, harness the power of real-time tracking to monitor diagnostic data, pinpoint precise locations, and optimize the performance of trucks and haulage equipment, effectively reducing congestion and minimizing wait times.</p>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+                    <img src="{{ asset('images/mining_excavator.jpg')}}" alt="mining excavator" class="w-full max-w-md">
+                </div>
+            </div>
+        </section>
+        
+        <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-8">
+            <h2 class="text-center text-4xl lg:text-5xl font-bold mb-8 dark:text-white" 
+                data-aos="fade-down" 
+                data-aos-duration="600">
+                Benefits of our solution
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Card 1 -->
+                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl transition-all duration-300"
+                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                    <div class="card-body p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="card-title text-xl font-bold mb-4 text-greycode-dark-blue dark:text-white">Seamless Integration</h3>
+                            <p class="text-gray-600 leading-relaxed dark:text-gray-300">Our solution seamlessly integrates with your existing manufacturing systems, ensuring a smooth transition and minimal disruption to your operations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl transition-all duration-300"
+                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                    <div class="card-body p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="card-title text-xl font-bold mb-4 text-greycode-dark-blue dark:text-white">Real-time Data Insights</h3>
+                            <p class="text-gray-600 leading-relaxed dark:text-gray-300">Our integrated surveillance systems, access control, and alarm systems are not only advanced but also manageable remotely, offering immediate alerts and proactive responses.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl transition-all duration-300"
+                     data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
+                    <div class="card-body p-6 flex flex-col justify-between">
+                        <div>
+                            <h3 class="card-title text-xl font-bold mb-4 text-greycode-dark-blue dark:text-white">Predictive Maintenance</h3>
+                            <p class="text-gray-600 leading-relaxed dark:text-gray-300">Identify potential equipment issues before they become major problems, saving you time and money on costly repairs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</x-layout>
+
+<style>
+    .mining-ribbon {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .mining-ribbon::before {
+        content: '';
+        position: absolute;
+        top: -90%;
+        left: -30%;
+        width: 200%;
+        height: 140%;
+        background-image: url('{{ asset('images/Untitled-1_0001_Layer-7.png') }}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: rotate(90deg);
+        transform-origin: center;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+
+    /* Dark mode adjustment for the ribbon */
+    @media (prefers-color-scheme: dark) {
+        .mining-ribbon::before {
+            opacity: 0.3;
+            filter: brightness(0.7);
+        }
+    }
+
+    .dark .mining-ribbon::before {
+        opacity: 0.3;
+        filter: brightness(0.7);
+    }
+</style>
