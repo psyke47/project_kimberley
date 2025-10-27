@@ -1,4 +1,4 @@
-<nav class="flex items-center justify-between py-2 px-4 lg:px-20 relative min-h-[60px] bg-white dark:bg-gray-800 transition-colors duration-300" role="navigation">
+<nav class="flex items-center justify-between py-2 px-4 lg:px-20 sticky top-0 z-50 min-h-[60px] bg-white dark:bg-gray-800 transition-colors duration-300" role="navigation">
     <!-- Logo -->
     <a href="/" class="flex items-center">
     <!-- Light mode logo -->
