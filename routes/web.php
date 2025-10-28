@@ -74,6 +74,9 @@ Route::get('/blog/youth-unemployment', function () {
     return view('blog/youth-unemployment');
 });
 
+
+// Blog landing page
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 // Dynamic blog posts
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
