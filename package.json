@@ -3,7 +3,7 @@
     "private": true,
     "type": "module",
     "engines": {
-        "node": "22.x"
+        "node": ">=22.x"
     },
     "scripts": {
         "build": "vite build",
@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "aos": "^2.3.4",
+        "node": "^22.21.0",
         "taos": "^1.0.5"
     }
 }
