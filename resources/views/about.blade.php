@@ -111,14 +111,14 @@
         </div>
     </div>
 </section>
-    <section class="py-16 bg-transparent dark:text-white">
+    {{-- <section class="py-16 bg-transparent dark:text-white">
         <div class="container mx-auto flex justify-center">
             <iframe width="600" height="500"
                 src="https://www.youtube.com/embed/r1sUMzkzXuY?autoplay=1&mute=1"
                 loading="lazy">
             </iframe>
         </div>
-    </section>
+    </section> --}}
 {{-- <section class="py-16 bg-white">
     <div class="container mx-auto px-4">
         <h2 class="text-4xl font-bold mb-16 text-left text-gray-800">
