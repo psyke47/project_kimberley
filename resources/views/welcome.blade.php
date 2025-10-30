@@ -1,4 +1,3 @@
-
 <x-layout>
 <section class="text-gray-600 in-dark:text-white body-font min-h-screen flex items-center relative overflow-hidden">
     <!-- Background Layers -->
@@ -11,7 +10,7 @@
     </div>
 
     <!-- Content Container -->
-    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 py-8 md:py-12 relative z-10">
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 py-8 md:py-12 relative z-10 max-w-full">
         <div class="flex flex-row items-center gap-4 sm:gap-6 md:gap-12 lg:gap-16">
             <!-- Text Content -->
             <div class="flex-1 w-full text-center md:text-left" 
@@ -47,7 +46,7 @@
     </h3>
     
     <!-- Image Grid - Now horizontal on all devices -->
-    <div class="rounded-4xl p-4 sm:p-6 md:p-8 shadow-3xl mx-4 sm:mx-8 md:mx-auto max-w-[90%] sm:max-w-3xl md:max-w-4xl" 
+    <div class="rounded-4xl p-4 sm:p-6 md:p-8 shadow-3xl mx-auto max-w-[90%] sm:max-w-3xl md:max-w-4xl" 
          style="background: #2C7DE6; background: linear-gradient(289deg, #2c7de6 25%, #7986A2 84%);"
          data-aos="zoom-in" 
          data-aos-duration="800"
@@ -149,7 +148,7 @@
         { id: 'smart-buildings', label: 'Smart Homes', href: '/smart-homes' },
         {{-- { id: 'tracking', label: 'Tracking', href: '/tracking' } --}}
     ]
-    }" class="service-tabs w-full max-w-7xl mx-auto px-6 lg:px-8 py-12">
+    }" class="service-tabs w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-hidden">
     
     {{-- Tab Navigation --}}
     <div class="service-tabs-menu flex flex-wrap gap-4 lg:gap-6 mb-8 lg:mb-12 border-b border-greycode-mid-blue dark:border-gray-700 pb-4" role="tablist">
@@ -793,6 +792,11 @@
 </section>
 
 <style>
+/* Ensure no horizontal overflow */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 /* Hide scrollbar for Chrome, Safari and Opera */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
