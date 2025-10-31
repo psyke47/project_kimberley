@@ -18,7 +18,16 @@
             <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl  mix-blend-brighten sm:font-extrabold">Coming Soon</h1>
             <p class="text-base sm:text-lg md:text-2xl lg:text-4xl font-semibold mix-blend-brighten leading sm:font-semibold">This page is under construction. Stay tuned!</p>
         </div>
+        <div class="mt-4 flex gap-3 flex-wrap justify-center">
+        <a href="/" class="inline-block px-4 py-2 bg-white text-black rounded-md text-sm sm:text-base hover:bg-gray-100">
+          Go Home
+        </a>
+        <a href="/contact" class="inline-block px-4 py-2 bg-greycode-light-blue border border-white/40 text-white rounded-md text-sm sm:text-base hover:bg-white/10">
+          Contact
+        </a>
+      </div>
     </div>
+    
     
     
     
