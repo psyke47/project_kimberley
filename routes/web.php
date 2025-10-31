@@ -24,6 +24,10 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/asset-tracking', function () {
+    return view('asset-tracking');
+});
+
 Route::get('/success-stories', function () {
     return view('success-stories');
 });
