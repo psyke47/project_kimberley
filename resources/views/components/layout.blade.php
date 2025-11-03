@@ -43,7 +43,7 @@
     {{ $slot }}
   </main>
   <x-footer />
-  <script type="module" src="/resources/js/app.js"></script>
+  <script src="{{ asset('resources/js/app.js') }}"></script>
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
