@@ -53,7 +53,7 @@ class BlogController extends Controller
             [
                 'title' => 'Smart Bulb Home Automation',
                 'excerpt' => 'Control AC bulbs remotely using Greycode Board and Blynk app with this home automation tutorial.',
-                'image' => '/images/SMART BULB.png',
+                'image' => '/images/SMART-BULB.png',
                 'url' => route('blog.smart-bulb'),
                 'category' => 'education',
                 'category_label' => 'Education',

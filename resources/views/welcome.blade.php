@@ -295,13 +295,13 @@
                 </div>
                 <div class="home-v3-services-image-grid flex-1 grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-delay="200">
                     <img 
-                        src="https://cdn.prod.website-files.com/61e9b480b016367a18c42a6c/61efb069d1f58857d33a514d_MINING).png" 
+                        src="images/mining-oil1.png" 
                         alt="Mining Overview" 
                         class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                         loading="lazy"
                     >
                     <img 
-                        src="https://cdn.prod.website-files.com/61e9b480b016367a18c42a6c/61efb0e4bd4038090837e040_MINING)%202.png" 
+                        src="images/mining-oil2.png" 
                         alt="Mining Operation" 
                         class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                         loading="lazy"
@@ -590,7 +590,7 @@
             <!-- Image Column (One Third) -->
             <div class="w-full lg:w-1/3" data-aos="fade-right" data-aos-duration="600">
                 <img 
-                    src="{{ asset('images/Untitled-boardb2.png') }}" 
+                    src="{{ asset('images/prototype-board.png') }}" 
                     alt="Section Image" 
                     class="w-full h-auto rounded-2xl shadow-lg object-cover"
                 >
