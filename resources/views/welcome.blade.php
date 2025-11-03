@@ -24,7 +24,7 @@
             </div>
 
             <!-- Hero Image -->
-            <div class="w-full max-w-3xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl flex-shrink-0" 
+            <div class="w-full max-w-3xl  flex-shrink-0" 
                  data-aos="fade-left" 
                  data-aos-duration="600"
                  data-aos-delay="150">
