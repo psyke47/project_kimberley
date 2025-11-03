@@ -134,10 +134,10 @@
 </section>
 {{-- <x-comment-section /> --}}
 {{-- Hero Section --}}
-    <section class="bg-gradient-to-r from-blue-600 to-purple-700 dark:from-blue-900 dark:to-purple-900 text-white py-16">
+    <section class="bg-gradient-to-r from-blue-600 to-greycode-dark-blue dark:from-blue-900 dark:to-greycode-mid-blue text-white py-16">
         <div class="container mx-auto px-6 text-center">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">
-                Greycode Blog
+            <h1 class="text-5xl md:text-6xl font-bold mb-4" data-aos="fade-up">
+                Blog
             </h1>
             <p class="text-xl md:text-2xl mb-8 opacity-90" data-aos="fade-up" data-aos-delay="200">
                 Learn, Build, Innovate

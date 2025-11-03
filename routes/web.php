@@ -28,6 +28,10 @@ Route::get('/asset-tracking', function () {
     return view('asset-tracking');
 });
 
+Route::get('/prototyping', function () {
+    return view('prototyping');
+});
+
 Route::get('/success-stories', function () {
     return view('success-stories');
 });
