@@ -11,7 +11,7 @@
 
     <!-- Content Container -->
     <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 py-8 md:py-12 relative z-10 max-w-full">
-        <div class="flex flex-row items-center gap-4 sm:gap-6 md:gap-12 lg:gap-16">
+        <div class="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-12 lg:gap-16">
             <!-- Text Content -->
             <div class="flex-1 w-full text-center md:text-left" 
                  data-aos="fade-right" 
@@ -24,7 +24,7 @@
             </div>
 
             <!-- Hero Image -->
-            <div class="w-full max-w-3xl flex-shrink-0" 
+            <div class="w-full max-w-3xl max-w-xs sm:max-w-sm md:max-w-md lg:max-w-3xl flex-shrink-0" 
                  data-aos="fade-left" 
                  data-aos-duration="600"
                  data-aos-delay="150">
