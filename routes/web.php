@@ -3,6 +3,8 @@
 use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\SubscriptionController;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -22,6 +24,14 @@ Route::get('/careers', function () {
 
 Route::get('/contact', function () {
     return view('contact');
+});
+
+Route::get('/asset-tracking', function () {
+    return view('asset-tracking');
+});
+
+Route::get('/prototyping', function () {
+    return view('prototyping');
 });
 
 Route::get('/success-stories', function () {
@@ -74,6 +84,9 @@ Route::get('/blog/youth-unemployment', function () {
     return view('blog/youth-unemployment');
 });
 
+
+// Blog landing page
+Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
 // Dynamic blog posts
 Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.show');
 
@@ -103,4 +116,10 @@ Route::get('/blog/youth-unemployment', [BlogController::class, 'youthUnemploymen
 
 // Comments
 Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+
+//Newsletter subscription
+Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe');
+
+//Contact form submission
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 

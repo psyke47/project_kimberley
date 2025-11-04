@@ -1,5 +1,6 @@
-
 <x-layout>
+    <x-slot name="title">Welcome to Greycode - IoT Solutions</x-slot>
+    <x-slot name="meta_description">Discover Greycode, a leading IoT solutions company in South Africa. We specialize in connected technologies, smart automation, and innovative IoT products that transform industries and improve lives.</x-slot>
 <section class="text-gray-600 in-dark:text-white body-font min-h-screen flex items-center relative overflow-hidden">
     <!-- Background Layers -->
     <div class="absolute inset-0 z-0">
@@ -11,8 +12,8 @@
     </div>
 
     <!-- Content Container -->
-    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 py-8 md:py-12 relative z-10">
-        <div class="flex flex-row items-center gap-4 sm:gap-6 md:gap-12 lg:gap-16">
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 py-8 md:py-12 relative z-10 max-w-full">
+        <div class="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-12 lg:gap-16">
             <!-- Text Content -->
             <div class="flex-1 w-full text-center md:text-left" 
                  data-aos="fade-right" 
@@ -25,7 +26,7 @@
             </div>
 
             <!-- Hero Image -->
-            <div class="w-full max-w-3xl flex-shrink-0" 
+            <div class="w-full max-w-3xl  flex-shrink-0" 
                  data-aos="fade-left" 
                  data-aos-duration="600"
                  data-aos-delay="150">
@@ -47,7 +48,7 @@
     </h3>
     
     <!-- Image Grid - Now horizontal on all devices -->
-    <div class="rounded-4xl p-4 sm:p-6 md:p-8 shadow-3xl mx-4 sm:mx-8 md:mx-auto max-w-[90%] sm:max-w-3xl md:max-w-4xl" 
+    <div class="rounded-4xl p-4 sm:p-6 md:p-8 shadow-3xl mx-auto max-w-[90%] sm:max-w-3xl md:max-w-4xl" 
          style="background: #2C7DE6; background: linear-gradient(289deg, #2c7de6 25%, #7986A2 84%);"
          data-aos="zoom-in" 
          data-aos-duration="800"
@@ -88,18 +89,18 @@
     </div>
 </section>
 
-<section class="relative overflow-hidden dark:bg-gray-800 dark:text-white py-12 sm:py-16">
+<section class="relative overflow-hidden dark:bg-gray-800 dark:text-white py-4 sm:pt-8">
     <!-- Background Container -->
     <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 bg-greycode-light-gray dark:bg-gray-800"></div>
-        <div 
+        {{-- <div 
             class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-50"
             style="background-image: url('{{ asset('images/Untitled-1_0006_Layer-2.png') }}');"
-        ></div>
+        ></div> --}}
     </div>
 
     <!-- Content -->
-    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 py-12 relative z-10">
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16  relative z-10">
         <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-center mt-6 sm:mt-10" 
             data-aos="fade-down" 
             data-aos-duration="600">
@@ -114,7 +115,7 @@
         </p>
 
         <!-- Service Links - Horizontal on all screens -->
-        <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 sm:gap-x-6 py-4"
+        {{-- <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 sm:gap-x-6 py-4"
              data-aos="fade-up" 
              data-aos-delay="300"
              data-aos-duration="500">
@@ -137,17 +138,284 @@
             <a href="#" class="gradient-text hover:text-blue-600 hover:scale-105 transition-transform duration-200 text-sm sm:text-base font-medium whitespace-nowrap">
                 TRACKING
             </a>
+        </div> --}}
+
+        {{-- Service Tabs Component --}}
+    <div x-data="{
+        activeTab: 'farming',
+        tabs: [
+        { id: 'farming', label: 'Smarter Farming', href: '/farming' },
+        { id: 'manufacturing', label: 'Manufacturing', href: '/manufacturing' },
+        { id: 'mining', label: 'Mining, Oil & Gas', href: '/mining' },
+        { id: 'smart-buildings', label: 'Smart Homes', href: '/smart-homes' },
+        {{-- { id: 'tracking', label: 'Tracking', href: '/tracking' } --}}
+    ]
+    }" class="service-tabs w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-12 overflow-hidden">
+    
+    {{-- Tab Navigation --}}
+    <div class="service-tabs-menu flex flex-wrap gap-4 lg:gap-6 mb-8 lg:mb-12 border-b border-greycode-mid-blue dark:border-gray-700 pb-4" role="tablist">
+        <template x-for="tab in tabs" :key="tab.id">
+            <button
+                @click="activeTab = tab.id"
+                :class="{
+                    'text-greycode-light-blue dark:text-blue-400 border-blue-600 dark:border-blue-400': activeTab === tab.id,
+                    'gradient-text dark:text-gray-400 border-transparent hover:text-gray-900 dark:hover:text-white': activeTab !== tab.id
+                }"
+                class="service-tab-link px-4 py-3 text-base font-semibold border-b-2 transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 rounded-t-lg"
+                :id="`tab-${tab.id}`"
+                role="tab"
+                :aria-selected="activeTab === tab.id"
+                :aria-controls="`panel-${tab.id}`"
+            >
+                <h5 class="text-lg font-bold" x-text="tab.label"></h5>
+            </button>
+        </template>
+    </div>
+
+    {{-- Tab Content --}}
+    <div class="w-tab-content">
+        {{-- Smarter Farming Tab --}}
+        <div 
+            x-show="activeTab === 'farming'" 
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 transform translate-y-4"
+            x-transition:enter-end="opacity-100 transform translate-y-0"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 transform translate-y-0"
+            x-transition:leave-end="opacity-0 transform translate-y-4"
+            class="service-tab-pane"
+            id="panel-farming"
+            role="tabpanel"
+            aria-labelledby="tab-farming"
+        >
+            <div class="service-tab-content flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                <div class="service-tab-content-left flex-1" data-aos="fade-right">
+                    <h5 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                        Let's feed the future
+                    </h5>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        Today, smart farming has become a reality. With the help of IoT technology and advanced machine learning algorithms, farmers can now monitor the health of their crops.
+                    </p>
+                    <a href="/farming" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        View More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="home-v3-services-image-grid flex-1 grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-delay="200">
+                    <img 
+                        src="/images/Screenshot 2025-09-29 151719.png" 
+                        alt="Farming Image" 
+                        class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                        loading="lazy"
+                    >
+                    <img 
+                        src="/images/Screenshot 2025-09-29 151733.png" 
+                        alt="Smart Farming Visualization" 
+                        class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
         </div>
 
+        {{-- Manufacturing Tab --}}
+        <div 
+            x-show="activeTab === 'manufacturing'" 
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 transform translate-y-4"
+            x-transition:enter-end="opacity-100 transform translate-y-0"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 transform translate-y-0"
+            x-transition:leave-end="opacity-0 transform translate-y-4"
+            class="service-tab-pane"
+            id="panel-manufacturing"
+            role="tabpanel"
+            aria-labelledby="tab-manufacturing"
+        >
+            <div class="service-tab-content flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                <div class="service-tab-content-left flex-1" data-aos="fade-right">
+                    <h5 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                        Let's make cool things
+                    </h5>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        Today's manufacturers are seeking agility. IoT enables increased mobility, fast decision-making, and higher yields across factory systems.
+                    </p>
+                    <a href="/manufacturing" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        View More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="home-v3-services-image-grid flex-1 grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-delay="200">
+                    <img 
+                        src="/images/manufacturing-1.png" 
+                        alt="Manufacturing Image" 
+                        class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                        loading="lazy"
+                    >
+                    <img 
+                        src="/images/manufaccting-2.png" 
+                        alt="Factory View" 
+                        class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </div>
+
+        {{-- Mining, Oil & Gas Tab --}}
+        <div 
+            x-show="activeTab === 'mining'" 
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 transform translate-y-4"
+            x-transition:enter-end="opacity-100 transform translate-y-0"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 transform translate-y-0"
+            x-transition:leave-end="opacity-0 transform translate-y-4"
+            class="service-tab-pane"
+            id="panel-mining"
+            role="tabpanel"
+            aria-labelledby="tab-mining"
+        >
+            <div class="service-tab-content flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                <div class="service-tab-content-left flex-1" data-aos="fade-right">
+                    <h5 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                        We <strong class="text-blue-600 dark:text-blue-400">digging</strong>
+                    </h5>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        Create a complete overview of your operation, digitize it, and optimize for safety, efficiency, and real-time insights.
+                    </p>
+                    <a href="/mining-oil-gas" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        View More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="home-v3-services-image-grid flex-1 grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-delay="200">
+                    <img 
+                        src="images/mining-oil1.png" 
+                        alt="Mining Overview" 
+                        class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                        loading="lazy"
+                    >
+                    <img 
+                        src="images/mining-oil2.png" 
+                        alt="Mining Operation" 
+                        class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </div>
+
+        {{-- Smart Buildings Tab --}}
+        <div 
+            x-show="activeTab === 'smart-buildings'" 
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 transform translate-y-4"
+            x-transition:enter-end="opacity-100 transform translate-y-0"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 transform translate-y-0"
+            x-transition:leave-end="opacity-0 transform translate-y-4"
+            class="service-tab-pane"
+            id="panel-smart-buildings"
+            role="tabpanel"
+            aria-labelledby="tab-smart-buildings"
+        >
+            <div class="service-tab-content flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                <div class="service-tab-content-left flex-1" data-aos="fade-right">
+                    <h5 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                        Smart Living
+                    </h5>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+                        Efficient building management to optimize energy, water, security, and occupancy — unlocking better smart living experiences.
+                    </p>
+                    
+                    <a href="/smart-home" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        View More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="home-v3-services-image-grid flex-1 grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-delay="200">
+                    <img 
+                        src="/images/smart-home1.png" 
+                        alt="Smart Building Image" 
+                        class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                        loading="lazy"
+                    >
+                    <img 
+                        src="/images/smart-home2.png" 
+                        alt="Interior Smart Control" 
+                        class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </div>
+
+        {{-- Tracking Tab --}}
+        <div 
+            x-show="activeTab === 'tracking'" 
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 transform translate-y-4"
+            x-transition:enter-end="opacity-100 transform translate-y-0"
+            x-transition:leave="transition ease-in duration-200"
+            x-transition:leave-start="opacity-100 transform translate-y-0"
+            x-transition:leave-end="opacity-0 transform translate-y-4"
+            class="service-tab-pane"
+            id="panel-tracking"
+            role="tabpanel"
+            aria-labelledby="tab-tracking"
+        >
+            <div class="service-tab-content flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                <div class="service-tab-content-left flex-1" data-aos="fade-right">
+                    <h5 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                        Let's find your assets
+                    </h5>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                        Track and manage mobile assets with real-time GPS, predictive analytics, and centralized dashboards for complete visibility.
+                    </p>
+                    <a href="/contact" class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        View More
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="home-v3-services-image-grid flex-1 grid grid-cols-2 gap-4" data-aos="fade-left" data-aos-delay="200">
+                    <img 
+                        src="/images/0/14400875/61efbf248aee48b4faeeebf3_location.png" 
+                        alt="Asset Location" 
+                        class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                        loading="lazy"
+                    >
+                    <img 
+                        src="/images/0/14400834/61efba7b26f04cb2b4a57d45_GPS12.png" 
+                        alt="GPS Module Visual" 
+                        class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                        loading="lazy"
+                    >
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
         <!-- View More Button -->
-        <div class="text-center mt-8" data-aos="fade-up" data-aos-delay="400">
+        {{-- <div class="text-center mt-8" data-aos="fade-up" data-aos-delay="400">
             <button class="gradient-outline-button capitalize px-6 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base">
                 View More
             </button>
-        </div>
+        </div> --}}
 
         <!-- Images - Responsive Pair -->
-        <div class="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8 mt-10 sm:mt-12">
+        {{-- <div class="flex flex-col sm:flex-row justify-center gap-6 sm:gap-8 mt-10 sm:mt-12">
             <img 
                 src="{{ asset('images/Screenshot 2025-09-29 151719.png')}}" 
                 alt="Smart farming and IoT solutions"
@@ -164,10 +432,10 @@
                 data-aos-delay="500"
                 data-aos-duration="600"
             >
-        </div>
+        </div> --}}
 
         <!-- Let's Feed the Future -->
-        <div class="text-center mt-12 sm:mt-16" data-aos="fade-up" data-aos-delay="600">
+        {{-- <div class="text-center mt-12 sm:mt-16" data-aos="fade-up" data-aos-delay="600">
             <h4 class="text-xl sm:text-2xl font-semibold px-4 py-4 sm:py-6">
                 Let's feed the future
             </h4>
@@ -181,12 +449,12 @@
             <button class="gradient-outline-button capitalize px-6 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base">
                 See More
             </button>
-        </div>
+        </div> --}}
     </div>
 </section>
 
-<section class="flex flex-col items-center justify-center text-center mt-10 mb-10 dark:bg-gray-800 dark:text-white">
-  <h3 class="text-5xl font-bold mb-4 text-center mt-10" data-aos="fade-down" data-aos-duration="600">
+<section class="flex flex-col items-center justify-center text-center mb-10 dark:bg-gray-800 dark:text-white">
+  <h3 class="text-5xl font-bold mb-4 text-center" data-aos="fade-down" data-aos-duration="600">
     Success <span class="text-greycode-light-blue">Stories</span>
   </h3>
   <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Get to know more about the work we do.</p>
@@ -324,7 +592,7 @@
             <!-- Image Column (One Third) -->
             <div class="w-full lg:w-1/3" data-aos="fade-right" data-aos-duration="600">
                 <img 
-                    src="{{ asset('images/Untitled-boardb2.png') }}" 
+                    src="{{ asset('images/prototype-board.png') }}" 
                     alt="Section Image" 
                     class="w-full h-auto rounded-2xl shadow-lg object-cover"
                 >
@@ -526,6 +794,11 @@
 </section>
 
 <style>
+/* Ensure no horizontal overflow */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
 /* Hide scrollbar for Chrome, Safari and Opera */
 .scrollbar-hide::-webkit-scrollbar {
     display: none;
@@ -549,7 +822,42 @@
     }
 }
 </style>
+<style>
+.service-tabs {
+    scroll-behavior: smooth;
+}
 
+.service-tab-link {
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-tab-link:hover:not([aria-selected="true"]) {
+    transform: translateY(-2px);
+}
+
+.service-tab-pane {
+    min-height: 400px;
+}
+
+@media (max-width: 768px) {
+    .service-tabs-menu {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+    }
+    
+    .service-tab-link {
+        white-space: nowrap;
+        flex-shrink: 0;
+    }
+    
+    .home-v3-services-image-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+</style>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     const carousel = document.getElementById('articles-carousel');

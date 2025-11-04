@@ -31,8 +31,8 @@
         
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div class="px-4" data-aos="fade-right" data-aos-duration="600">
-                    <img src="{{ asset('images/mining_excavator.jpg')}}" alt="smart soil monitoring">
+                <div class="px-4 dark:bg-white" data-aos="fade-right" data-aos-duration="600">
+                    <img src="{{ asset('images/soil-monitoring.png')}}" alt="smart soil monitoring">
                 </div>
                 <div class="px-4 space-y-6" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                     <h2 class="text-4xl font-bold dark:text-white">Soil Monitoring</h2>
