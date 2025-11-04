@@ -78,8 +78,22 @@
                 </div>
             </div>
 
-            {{-- Comment Section --}}
-            <x-comment-section :comments="$comments" />
         </div>
     </section>
+    @if(isset($post))
+        <x-comment-section :model="$post" :comments="$comments" />
+    @elseif(isset($commentableId) && isset($commentableType))
+        <x-comment-section 
+            :commentableId="$commentableId" 
+            :commentableType="$commentableType" 
+            :comments="$comments" 
+        />
+    @else
+        {{-- Fallback for static pages --}}
+        <x-comment-section 
+            commentableId="1" 
+            commentableType="App\Models\Page" 
+            :comments="$comments ?? collect()" 
+        />
+    @endif
 </x-layout>
