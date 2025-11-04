@@ -234,21 +234,32 @@
 
 <section class="bg-black py-8 text-white">
     <div class="container mx-auto px-4 py-6 lg:px-40">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div x-data="newsletterForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div class="flex flex-col justify-center">
                 <h5 class="text-4xl font-semibold lg:pr-30 lg:pl-24"><span class="text-greycode-light-blue">Subscribe</span> to get more content News and opinion on everything Internet of Things</h5>
             </div>
+            <form @submit.prevent="submitForm" action="{{ route('subscribe') }}" method="POST">
+            @csrf
+
+            <label for="email">Email</label>
+            <input type="email"
+                id="email"
+                name="email"
+                x-model="email"
+                required
+                class="bg-white border border-gray-300 rounded-md px-4 py-2 w-full text-black focus:outline-none focus:ring-2 focus:ring-greycode-light-blue mb-4"
+                placeholder="Enter your email">
+
             <div>
-                <form action="mailto:skillsprogram@greycode.co.za" method="POST">
-                    @csrf
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" class="bg-white border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-greycode-light-blue mb-4">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" class="bg-white border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-greycode-light-blue mb-4">
-                <div>
-                    <button class="bg-greycode-light-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105 capitalize">Subscribe</button>
-                </div>
+            <button
+                type="submit"
+                class="bg-greycode-light-blue text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-300 transform hover:scale-105 capitalize"
+            >
+            Subscribe
+            </button>
+            </div>
             </form>
+
         </div>
     </div>
 </section>
@@ -335,5 +346,28 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Load more functionality would be implemented with Laravel pagination or AJAX loading.');
         });
     }
+});
+</script>
+<script>
+document.addEventListener('alpine:init', () => {
+    Alpine.data('newsletterForm', () => ({
+        email: '',
+        async submitForm() {
+            try {
+                await fetch("{{ route('subscribe') }}", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRF-TOKEN": "{{ csrf_token() }}"
+                    },
+                    body: JSON.stringify({ email: this.email })
+                });
+                alert("Subscribed successfully!");
+                this.email = '';
+            } catch (error) {
+                alert("Subscription failed.");
+            }
+        }
+    }));
 });
 </script>

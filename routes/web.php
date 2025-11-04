@@ -3,6 +3,7 @@
 use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\SubscriptionController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -114,4 +115,8 @@ Route::get('/blog/youth-unemployment', [BlogController::class, 'youthUnemploymen
 
 // Comments
 Route::post('/comments', [CommentController::class, 'store'])->name('comments.store');
+
+//Newsletter subscription
+Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe');
+
 

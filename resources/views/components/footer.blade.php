@@ -57,13 +57,15 @@
         </div>
 
         <!-- Newsletter form: stacked on small screens, inline on md+ -->
-        <div class="form mt-6">
-            <form action="#" method="POST" class="flex flex-col md:flex-row items-center md:justify-center md:space-x-4 space-y-4 md:space-y-0 w-full max-w-3xl mx-auto px-2">
+        <div x-data="newsletterForm" class="form mt-6">
+            <form @submit.prevent="submitForm" action="{{ route('subscribe') }}" method="POST" class="flex flex-col md:flex-row items-center md:justify-center md:space-x-4 space-y-4 md:space-y-0 w-full max-w-3xl mx-auto px-2">
+                @csrf
                 <h4 class="text-lg font-semibold text-white md:mr-4">Subscribe to our Newsletter</h4>
 
                 <input
                     type="email"
                     name="email"
+                    x-model="email"
                     placeholder="Enter your email"
                     class="px-4 py-2 rounded-md focus:outline-none text-gray-800 bg-white w-full md:w-80"
                     required
@@ -90,3 +92,26 @@
         </div>
     </div>
 </footer>
+<script>
+document.addEventListener('alpine:init', () => {
+    Alpine.data('newsletterForm', () => ({
+        email: '',
+        async submitForm() {
+            try {
+                await fetch("{{ route('subscribe') }}", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRF-TOKEN": "{{ csrf_token() }}"
+                    },
+                    body: JSON.stringify({ email: this.email })
+                });
+                alert("Subscribed successfully!");
+                this.email = '';
+            } catch (error) {
+                alert("Subscription failed.");
+            }
+        }
+    }));
+});
+</script>
