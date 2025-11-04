@@ -239,7 +239,7 @@
                 <h5 class="text-4xl font-semibold lg:pr-30 lg:pl-24"><span class="text-greycode-light-blue">Subscribe</span> to get more content News and opinion on everything Internet of Things</h5>
             </div>
             <div>
-                <form action="" method="POST">
+                <form action="mailto:skillsprogram@greycode.co.za" method="POST">
                     @csrf
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" class="bg-white border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-greycode-light-blue mb-4">

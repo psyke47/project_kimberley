@@ -79,7 +79,7 @@
 
         <!-- Contact details -->
         <div class="flex flex-col sm:flex-row justify-center text-white mt-6 space-y-2 sm:space-y-0 sm:space-x-6 text-center px-2">
-            <p><a href="mailto:info@Greycode.co.za" class="hover:underline">info@Greycode.co.za</a></p>
+            <p><a href="mailto:skillsprogram@greycode.co.za" class="hover:underline">skillsprogram@greycode.co.za</a></p>
             <p><a href="tel:+27124813515" class="hover:underline">+27 12 481 3515</a></p>
             <p><a href="#" class="hover:underline">13 Stamvrug St, Val de Grace, Pretoria</a></p>
         </div>

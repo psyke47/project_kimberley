@@ -23,8 +23,8 @@
                                 <i class="fas fa-envelope text-greycode-light-blue"></i>
                                 <h4 class="font-medium text-gray-900 dark:text-white">Email</h4>
                             </div>
-                            <a href="mailto:info@greycode.co.za" class="text-gray-600 hover:text-greycode-light-blue transition-colors block dark:text-gray-300">
-                                info@greycode.co.za
+                            <a href="mailto:skillsprogram@greycode.co.za" class="text-gray-600 hover:text-greycode-light-blue transition-colors block dark:text-gray-300">
+                                skillsprogram@greycode.co.za
                             </a>
                         </div>
                         
@@ -130,7 +130,7 @@
                         <div class="pt-4">
                             <button 
                                 type="submit" 
-                                class="w-full bg-gradient-to-r from-greycode-light-blue to-greycode-mid-blue text-white font-bold py-4 px-8 rounded-lg transition-all duration-500 ease-in-out hover:brightness-110 hover:scale-105 transform shadow-lg"
+                                class="w-full bg-linear-to-r from-greycode-light-blue to-greycode-mid-blue text-white font-bold py-4 px-8 rounded-lg transition-all duration-500 ease-in-out hover:brightness-110 hover:scale-105 transform shadow-lg"
                             >
                                 Submit Message
                             </button>
