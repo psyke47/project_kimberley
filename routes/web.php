@@ -4,6 +4,7 @@ use App\Http\Controllers\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\SubscriptionController;
+use App\Http\Controllers\ContactController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -119,4 +120,6 @@ Route::post('/comments', [CommentController::class, 'store'])->name('comments.st
 //Newsletter subscription
 Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe');
 
+//Contact form submission
+Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 

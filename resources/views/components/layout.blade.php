@@ -10,6 +10,24 @@
     @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>{{ $title ?? 'Greycode' }}</title>
+    <meta name="description" content="{{ $meta_description ?? 'Greycode - Innovative IoT Solutions' }}">
+    <meta name="keywords" content="{{ $meta_keywords ?? 'IoT, Internet of Things, Greycode, Innovative Solutions' }}">
+    <meta name="author" content="{{ $meta_author ?? 'Greycode' }}">
+    <meta name="robots" content="{{ $meta_robots ?? 'index, follow' }}">
+    <link rel="canonical" href="{{ $meta_canonical ?? request()->url() }}">
+    <meta property="og:title" content="{{ $title ?? 'Greycode' }}">
+    <meta property="og:description" content="{{ $meta_description ?? 'Greycode - Innovative IoT Solutions' }}">
+    <meta property="og:image" content="{{ $meta_image ?? asset('images/og-image.png') }}">
+    <meta property="og:url" content="{{ $meta_canonical ?? request()->url() }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $title ?? 'Greycode' }}">
+    <meta name="twitter:description" content="{{ $meta_description ?? 'Greycode - Innovative IoT Solutions' }}">
+    <meta name="twitter:image" content="{{ $meta_image ?? asset('images/twitter-image.png') }}">
+    <meta name="twitter:url" content="{{ $meta_canonical ?? request()->url() }}">
+    <meta name="twitter:site" content="@Greycode">
+    <meta name="twitter:creator" content="@Greycode">
+    
+    
 
     {{-- Favicon --}}
     <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">

@@ -1,4 +1,6 @@
 <x-layout>
+    <x-slot name="title">Blog - Greycode</x-slot>
+    <x-slot name="meta_description">Stay updated with the latest news and insights from Greycode, your partner in IoT solutions.</x-slot>
     <section class="bg-greycode-mid-blue relative overflow-hidden">
     <!-- Fade effect at the bottom -->
     <div class="absolute bottom-0 left-0 w-full h-16  pointer-events-none"></div>

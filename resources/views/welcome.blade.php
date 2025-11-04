@@ -1,4 +1,6 @@
 <x-layout>
+    <x-slot name="title">Welcome to Greycode - IoT Solutions</x-slot>
+    <x-slot name="meta_description">Discover Greycode, a leading IoT solutions company in South Africa. We specialize in connected technologies, smart automation, and innovative IoT products that transform industries and improve lives.</x-slot>
 <section class="text-gray-600 in-dark:text-white body-font min-h-screen flex items-center relative overflow-hidden">
     <!-- Background Layers -->
     <div class="absolute inset-0 z-0">

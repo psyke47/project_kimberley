@@ -1,4 +1,6 @@
 <x-layout>
+    <x-slot name="title">About Us - Greycode</x-slot>
+    <x-slot name="meta_description">Learn about Greycode, a South African IoT solution company dedicated to building innovative connected solutions that empower people and communities.</x-slot>
     <section>
         <div class="container mx-auto px-4 py-16 border-b border-greycode-light-blue">
             <h1 class="text-4xl font-bold mb-6 text-left text-gray-800 dark:text-white"><span class="text-greycode-light-blue">We are </span>building a <br><span class="text-greycode-light-blue">revolutionary</span> new way for <br><span class="text-greycode-light-blue">people</span> to interact with the <br>world around them.</h1>
