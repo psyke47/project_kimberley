@@ -14,7 +14,7 @@
                 {{-- Featured Image --}}
                 <div class="mb-6" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <img 
-                        src="/images/SMART BULB.png" 
+                        src="/images/SMART-BULB.png" 
                         alt="Smart Bulb Project"
                         class="w-full rounded-2xl shadow-lg dark:shadow-gray-700 transition-transform duration-300 hover:scale-105"
                         loading="lazy"
@@ -316,9 +316,20 @@ void loop() {
     </section>
 
     {{-- Comment Section --}}
-    @if(isset($comments))
-        <x-comment-section :comments="$comments" />
+    @if(isset($post))
+        <x-comment-section :model="$post" :comments="$comments" />
+    @elseif(isset($commentableId) && isset($commentableType))
+        <x-comment-section 
+            :commentableId="$commentableId" 
+            :commentableType="$commentableType" 
+            :comments="$comments" 
+        />
     @else
-        <x-comment-section :comments="collect()" />
+        {{-- Fallback for static pages --}}
+        <x-comment-section 
+            commentableId="1" 
+            commentableType="App\Models\Page" 
+            :comments="$comments ?? collect()" 
+        />
     @endif
 </x-layout>

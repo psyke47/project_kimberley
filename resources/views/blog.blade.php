@@ -49,7 +49,7 @@
         </div>
     </div>
 </section>
-<section class="container mx-auto px-4 py-8">
+{{-- <section class="container mx-auto px-4 py-8">
     <!-- Main blog container with rounded corners -->
     <div class="bg-white dark:bg-gray-800 dark:text-white dark:shadow-white rounded-2xl shadow-lg p-6 md:p-8">
         <div class="flex flex-col lg:flex-row gap-8">
@@ -133,7 +133,7 @@
             
         </div>
     </div>
-</section>
+</section> --}}
 {{-- <x-comment-section /> --}}
 {{-- Hero Section --}}
     <section class="bg-gradient-to-r from-blue-600 to-greycode-dark-blue dark:from-blue-900 dark:to-greycode-mid-blue text-white py-16">
