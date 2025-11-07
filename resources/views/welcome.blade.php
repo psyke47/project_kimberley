@@ -648,7 +648,7 @@
     </div>
 </section>
 
-<section class="py-16 bg-gray-50 dark:bg-gray-800 dark:text-white">
+{{-- <section class="py-16 bg-gray-50 dark:bg-gray-800 dark:text-white">
     <div class="container mx-auto px-4">
         <!-- Section Header -->
         <div class="text-center mb-12" data-aos="fade-down" data-aos-duration="600">
@@ -826,7 +826,7 @@
         </div>
     </div>
 </section>
-
+ --}}
 <style>
 /* Ensure no horizontal overflow */
 html, body {

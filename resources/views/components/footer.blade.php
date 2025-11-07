@@ -1,4 +1,4 @@
-<footer class="text-black py-8 bg-gradient-to-t from-gray-500 from-95% to-transparent-5% dark:bg-gray-900">
+<footer class="text-black py-8 bg-greycode-gray dark:bg-gray-900">
     <div class="container mx-auto px-4 max-w-7xl">
         <!-- Social icons: responsive flex-wrap so it adapts to all screen sizes -->
         <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-9">
@@ -83,7 +83,7 @@
         <div class="flex flex-col sm:flex-row justify-center text-white mt-6 space-y-2 sm:space-y-0 sm:space-x-6 text-center px-2">
             <p><a href="mailto:skillsprogram@greycode.co.za" class="hover:underline">skillsprogram@greycode.co.za</a></p>
             <p><a href="tel:+27124813515" class="hover:underline">+27 12 481 3515</a></p>
-            <p><a href="#" class="hover:underline">13 Stamvrug St, Val de Grace, Pretoria</a></p>
+            <p><a href="https://maps.app.goo.gl/hmF38qv8gKgC1WpJ9" class="hover:underline">13 Stamvrug St, Val de Grace, Pretoria</a></p>
         </div>
 
         <!-- Copyright -->
