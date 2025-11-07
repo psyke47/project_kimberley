@@ -23,7 +23,7 @@
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8">
             <div class="px-6 sm:px-8 lg:px-16 py-8 bg-greycode-gray dark:bg-gray-700 rounded-4xl opacity-90" 
                  data-aos="fade-up" data-aos-duration="600">
-                <p class="leading dark:text-gray-300">What is smart mining? :Smart mining is an innovative approach to resource extraction that leverages cutting-edge technologies like the Internet of Things (IoT), Artificial Intelligence (AI), automation, and data analytics to significantly improve efficiency, safety, and environmental sustainability in mining operations. This modern methodology transforms traditional mining practices by automating processes, optimizing decision-making through real-time data analysis, and ensuring higher safety standards through remote and autonomous operations. It represents a significant shift towards more responsible and technologically advanced mining practices, focusing on reducing environmental impact and enhancing operational efficiency</p>
+                <p class="leading text-white dark:text-gray-300">What is smart mining? :Smart mining is an innovative approach to resource extraction that leverages cutting-edge technologies like the Internet of Things (IoT), Artificial Intelligence (AI), automation, and data analytics to significantly improve efficiency, safety, and environmental sustainability in mining operations. This modern methodology transforms traditional mining practices by automating processes, optimizing decision-making through real-time data analysis, and ensuring higher safety standards through remote and autonomous operations. It represents a significant shift towards more responsible and technologically advanced mining practices, focusing on reducing environmental impact and enhancing operational efficiency</p>
             </div>
         </section>
         
@@ -57,7 +57,7 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 <!-- Card 1 -->
-                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl transition-all duration-300"
+                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div class="card-body p-6 flex flex-col justify-between">
                         <div>
@@ -68,7 +68,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl transition-all duration-300"
+                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
                     <div class="card-body p-6 flex flex-col justify-between">
                         <div>
@@ -79,7 +79,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl transition-all duration-300"
+                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                     <div class="card-body p-6 flex flex-col justify-between">
                         <div>

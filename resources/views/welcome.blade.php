@@ -15,7 +15,7 @@
     <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 py-8 md:py-12 relative z-10 max-w-full">
         <div class="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-12 lg:gap-16">
             <!-- Text Content -->
-            <div class="flex-1 w-full text-center md:text-left" 
+            <div class="flex-1 w-full text-center md:text-left lg:pl-[70px]" 
                  data-aos="fade-right" 
                  data-aos-duration="600">
                 <h1 class="title-font text-2xl sm:text-3xl md:text-4xl lg:text-[55px] font-medium text-black in-dark:text-white uppercase leading-tight tracking-tight">
@@ -501,6 +501,11 @@
         <p>Intelligent building management systems optimize energy consumption and enhance security...</p>
       </div>
     </div>
+  </div>
+  <div class="mt-8 " data-aos="fade-up" data-aos-delay="600" data-aos-duration="500">
+    <a href="/success-stories" class="inline-block ">
+        <button class="btn bg-blue-600 hover:bg-blue-700 px-6 py-3 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">Read More</button>
+    </a>
   </div>
 </section>
 
