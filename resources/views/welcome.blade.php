@@ -6,39 +6,56 @@
     <div class="absolute inset-0 z-0">
         <div class="absolute inset-0 bg-greycode-light-gray in-dark:bg-gray-800"></div>
         <div 
-            class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100"
+            class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100 xs:opacity-25 sm:opacity-50 md:opacity-75"
             style="background-image: url('{{ asset('images/hero-background.png') }}');"
         ></div>
     </div>
 
     <!-- Content Container -->
     <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 py-8 md:py-12 relative z-10 max-w-full">
-        <div class="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-12 lg:gap-16">
+        <div class="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-12 lg:gap-8">
             <!-- Text Content -->
-            <div class="flex-1 w-full text-center md:text-left lg:pl-[70px]" 
+            <div class="flex-1 w-full text-center md:text-left lg:pl-[400px]" 
                  data-aos="fade-right" 
                  data-aos-duration="600">
-                <h1 class="title-font text-2xl sm:text-3xl md:text-4xl lg:text-[55px] font-medium text-black in-dark:text-white uppercase leading-tight tracking-tight">
+                <h1 class="title-font text-3xl sm:text-3xl md:text-4xl lg:text-[55px] font-medium text-black in-dark:text-white uppercase leading-tight tracking-tight">
                     CONNECT, <br>CONTROL, AND<br>
                     AUTOMATE<br>
                     <span class="text-greycode-light-blue hero-underline">YOUR WORLD</span>
                 </h1>
             </div>
 
-            <!-- Hero Image -->
-            <div class="w-full max-w-3xl  flex-shrink-0" 
-                 data-aos="fade-left" 
-                 data-aos-duration="600"
-                 data-aos-delay="150">
-                <img 
-                    class="w-full h-auto object-contain rounded-lg hover:animate-pulse transform hover:scale-[1.03] transition-transform duration-700" 
-                    src="{{ asset('images/Screenshot 2025-09-29 120823.png') }}" 
-                    alt="Smart automation dashboard"
-                >
-            </div>
-        </div>
+            <!-- Hero Image Carousel -->
+                <div class="w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl flex-shrink-0  h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px]" 
+                     data-aos="fade-left" 
+                     data-aos-duration="600"
+                     data-aos-delay="150">
+                    <div class="relative w-full h-full overflow-hidden rounded-lg">
+                        <img class="carousel-slide active absolute top-0 left-0 w-full h-full object-contain hover:scale-[1.10] transition-transform duration-700"
+                             src="{{ asset('images/roboticArm.png') }}"
+                             alt="Robotic arm">
+                        <img class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-[1.10] transition-transform duration-700"
+                             src="{{ asset('images/home.png') }}"
+                             alt="Smart Home">
+                        <img class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-[1.10] transition-transform duration-700"
+                             src="{{ asset('images/building.png') }}"
+                             alt="Smart Building">
+                       
+                    </div>
+                </div>
     </div>
 </section>
+ 
+{{--Carousel styling--}}
+<style>
+        .carousel-slide {
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .carousel-slide.active {
+            opacity: 1;
+        }
+    </style>
 
 <section class="dark:bg-gray-800 dark:text-white py-8 sm:py-12 md:py-16">
     <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-center mt-10 px-4" 
@@ -55,26 +72,38 @@
          data-aos-delay="150">
         <div class="flex flex-row justify-center items-center gap-3 sm:gap-6 md:gap-8 flex-wrap">
             <!-- Smaller base size for mobile -->
-            <img src="{{ asset('images/icons-01.png')}}" 
-                 class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300" 
-                 alt="IoT Icon 1"
-                 data-aos="fade-up" 
-                 data-aos-delay="300">
-            <img src="{{ asset('images/icons-02.png')}}" 
-                 class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-bounce transition-transform duration-300" 
-                 alt="IoT Icon 2"
-                 data-aos="fade-up" 
-                 data-aos-delay="400">
-            <img src="{{ asset('images/icons-03.png')}}" 
-                 class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-bounce transition-transform duration-300" 
-                 alt="IoT Icon 3"
-                 data-aos="fade-up" 
-                 data-aos-delay="500">
-            <img src="{{ asset('images/icons-04.png')}}" 
-                 class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300" 
-                 alt="IoT Icon 4"
-                 data-aos="fade-up" 
-                 data-aos-delay="600">
+            <div>
+                <img src="{{ asset('images/icons-01.png')}}"
+                     class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300"
+                     alt="IoT Icon 1"
+                     data-aos="fade-up"
+                     data-aos-delay="300">
+                     <p class="text-sm text-white text-center">Sensors capture data</p>
+            </div>
+            <div>
+                <img src="{{ asset('images/icons-02.png')}}"
+                     class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300"
+                     alt="IoT Icon 2"
+                     data-aos="fade-up"
+                     data-aos-delay="400">
+                     <p class="text-sm text-white text-center">Share data</p>
+            </div>
+            <div>
+                <img src="{{ asset('images/icons-03.png')}}"
+                     class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300"
+                     alt="IoT Icon 3"
+                     data-aos="fade-up"
+                     data-aos-delay="500">
+                    <p class="text-sm text-white text-center">Process data</p>
+            </div>
+            <div>
+                <img src="{{ asset('images/icons-04.png')}}"
+                     class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300"
+                     alt="IoT Icon 4"
+                     data-aos="fade-up"
+                     data-aos-delay="600">
+                    <p class="text-sm text-white text-center">Act on data</p>
+            </div>
         </div>
     </div>
 
@@ -927,4 +956,32 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+<script>
+        // Initialize AOS animations
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+            
+            // Image carousel functionality
+            let currentSlide = 0;
+            const slides = document.querySelectorAll('.carousel-slide');
+            const totalSlides = slides.length;
+            
+            function showNextSlide() {
+                // Hide current slide
+                slides[currentSlide].classList.remove('active');
+                
+                // Move to next slide
+                currentSlide = (currentSlide + 1) % totalSlides;
+                
+                // Show next slide
+                slides[currentSlide].classList.add('active');
+            }
+            
+            // Change slide every 4 seconds
+            setInterval(showNextSlide, 4000);
+        });
+    </script>
 </x-layout>
