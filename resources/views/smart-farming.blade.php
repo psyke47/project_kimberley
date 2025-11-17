@@ -13,9 +13,11 @@
                     <p class="text-gray-700 leading-relaxed dark:text-gray-300">
                         The Grey Code Smart Farming approach is a technology-driven method in agriculture that utilizes various technologies to enhance yield and efficiency. This includes automation in livestock farms and the integration of sensors in crop fields.
                     </p>
-                    <button class="gradient-outline-button uppercase mt-6" data-aos="fade-up" data-aos-delay="300">
-                        Get Started
-                    </button>
+                    <a href="/contact">
+                        <button class="gradient-outline-button uppercase mt-6" data-aos="fade-up" data-aos-delay="300">
+                            Get Started
+                        </button>
+                    </a>
                 </div>
                 <div class="px-4" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                     <img src="{{ asset('images/smart-farming.jpg') }}" alt="smart farming" class="w-full">
