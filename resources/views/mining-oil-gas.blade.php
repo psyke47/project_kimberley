@@ -21,9 +21,9 @@
         </section>
         
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8">
-            <div class="px-6 sm:px-8 lg:px-16 py-8 bg-greycode-gray dark:bg-gray-700 rounded-4xl opacity-90" 
+            <div class="px-6 sm:px-8 lg:px-16 py-8 bg-greycode-light-gray dark:bg-gray-700 rounded-4xl opacity-90" 
                  data-aos="fade-up" data-aos-duration="600">
-                <p class="leading text-white dark:text-gray-300">What is smart mining? :Smart mining is an innovative approach to resource extraction that leverages cutting-edge technologies like the Internet of Things (IoT), Artificial Intelligence (AI), automation, and data analytics to significantly improve efficiency, safety, and environmental sustainability in mining operations. This modern methodology transforms traditional mining practices by automating processes, optimizing decision-making through real-time data analysis, and ensuring higher safety standards through remote and autonomous operations. It represents a significant shift towards more responsible and technologically advanced mining practices, focusing on reducing environmental impact and enhancing operational efficiency</p>
+                <p class="leading text-black dark:text-gray-300">What is smart mining? :Smart mining is an innovative approach to resource extraction that leverages cutting-edge technologies like the Internet of Things (IoT), Artificial Intelligence (AI), automation, and data analytics to significantly improve efficiency, safety, and environmental sustainability in mining operations. This modern methodology transforms traditional mining practices by automating processes, optimizing decision-making through real-time data analysis, and ensuring higher safety standards through remote and autonomous operations. It represents a significant shift towards more responsible and technologically advanced mining practices, focusing on reducing environmental impact and enhancing operational efficiency</p>
             </div>
         </section>
         
