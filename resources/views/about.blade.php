@@ -1,10 +1,10 @@
 <x-layout>
     <x-slot name="title">About Us - Greycode</x-slot>
     
-    <section>
+    <section class="px-4 lg:px20">
         <div class="container mx-auto px-4 py-16 border-b border-greycode-light-blue">
             <h1 class="text-4xl font-bold mb-6 text-left text-gray-800 dark:text-white"><span class="text-greycode-light-blue">We are </span>building a <br><span class="text-greycode-light-blue">revolutionary</span> new way for <br><span class="text-greycode-light-blue">people</span> to interact with the <br>world around them.</h1>
-            <p class="dark:text-white">Greycode is an Internet of things solution company based in South Africa, composed of a team of designers, engineers and makers. We ae focused on IOT as a service and also developing IoT hardware and software. We leverage our experience in electronics, mechatronics, computer science engineering, sensor technologies, embedded design and systems integration to build innovative connected solutions. we also gather all these new and disruptive trends from sensors, analytics, networks and software to deliver the most-advanced and cost effective solutions for any application.</p>
+            <p class="dark:text-white text-xl">Greycode is an Internet of things solution company based in South Africa, composed of a team of designers, engineers and makers. We ae focused on IOT as a service and also developing IoT hardware and software. We leverage our experience in electronics, mechatronics, computer science engineering, sensor technologies, embedded design and systems integration to build innovative connected solutions. we also gather all these new and disruptive trends from sensors, analytics, networks and software to deliver the most-advanced and cost effective solutions for any application.</p>
         </div>
     </section>
     {{-- <section id="vision" class="py-12 sm:py-16 lg:py-20 bg-gray-50 dark:bg-gray-900">
@@ -114,7 +114,7 @@
     </div>
 </section> --}}
 <section id="vision" class="py-12 sm:py-16 lg:py-20 bg-gray-50 dark:bg-gray-900">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="container mx-auto px-10 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="text-center mb-12 sm:mb-16">
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white">
@@ -136,7 +136,7 @@
                             Connecting people seamlessly to a smarter, safer and more fulfilling world.
                         </p>
                     </div>
-                    <div class="absolute bottom-4 right-4 text-5xl font-bold text-greycode-light-blue/20 dark:text-greycode-light-blue/30">01</div>
+                    <div class="absolute bottom-4 right-4 text-4xl font-bold text-greycode-light-blue/20 dark:text-greycode-light-blue/30">01</div>
                 </div>
 
                 <!-- Vision Block 02 -->
@@ -149,7 +149,7 @@
                             We are building a revolutionary new way for people to interact with the world around them.
                         </p>
                     </div>
-                    <div class="absolute bottom-4 right-4 text-5xl font-bold text-greycode-light-blue/20 dark:text-greycode-light-blue/30">02</div>
+                    <div class="absolute bottom-4 right-4 text-4xl font-bold text-greycode-light-blue/20 dark:text-greycode-light-blue/30">02</div>
                 </div>
 
                 <!-- Vision Block 03 -->
@@ -162,7 +162,7 @@
                             Impact the world by improving the connection between people and their environment.
                         </p>
                     </div>
-                    <div class="absolute bottom-4 right-4 text-5xl font-bold text-greycode-light-blue/20 dark:text-greycode-light-blue/30">03</div>
+                    <div class="absolute bottom-4 right-4 text-4xl font-bold text-greycode-light-blue/20 dark:text-greycode-light-blue/30">03</div>
                 </div>
             </div>
 
@@ -178,7 +178,7 @@
                             Imagine a world where everyone and everything is connected.
                         </p>
                     </div>
-                    <div class="absolute bottom-4 right-4 text-5xl font-bold text-greycode-light-blue/20 dark:text-greycode-light-blue/30">04</div>
+                    <div class="absolute bottom-4 right-4 text-4xl font-bold text-greycode-light-blue/20 dark:text-greycode-light-blue/30">04</div>
                 </div>
 
                 <!-- Vision Block 05 -->
@@ -191,7 +191,7 @@
                             The amount of information being generated and captured today is unprecedented. Our vision is to not only capture all of your data, but also be able to make sense of it in real-time and action upon it.
                         </p>
                     </div>
-                    <div class="absolute bottom-4 right-4 text-5xl font-bold text-greycode-light-blue/20 dark:text-greycode-light-blue/30">05</div>
+                    <div class="absolute bottom-4 right-4 text-4xl font-bold text-greycode-light-blue/20 dark:text-greycode-light-blue/30">05</div>
                 </div>
             </div>
         </div>
