@@ -1,10 +1,10 @@
-<footer class="text-black py-8 bg-gradient-to-t from-gray-500 from-95% to-transparent-5% dark:bg-gray-900">
+<footer class="text-black py-8 bg-greycode-gray dark:bg-gray-900">
     <div class="container mx-auto px-4 max-w-7xl">
         <!-- Social icons: responsive flex-wrap so it adapts to all screen sizes -->
         <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-9">
             <!-- TikTok -->
             <div class="flex flex-col items-center space-y-2">
-                <a href="#" aria-label="TikTok" class="group inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-black rounded-full transform transition-all duration-300 hover:scale-110">
+                <a href="https://www.tiktok.com/@greycode_skillshare?is_from_webapp=1&sender_device=pc" aria-label="TikTok" class="group inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-black rounded-full transform transition-all duration-300 hover:scale-110">
                     <i class="fa-brands fa-tiktok text-2xl text-gray-800 hover:text-white transition-colors duration-300"></i>
                 </a>
                 <p class="text-white text-xs sm:text-[12px]">TikTok</p>
@@ -12,7 +12,7 @@
 
             <!-- LinkedIn -->
             <div class="flex flex-col items-center space-y-2">
-                <a href="#" aria-label="LinkedIn" class="group inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-blue-900 rounded-full transform transition-all duration-300 hover:scale-110">
+                <a href="https://za.linkedin.com/company/greycode-pty-ltd" aria-label="LinkedIn" class="group inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-blue-900 rounded-full transform transition-all duration-300 hover:scale-110">
                     <i class="fa-brands fa-linkedin-in text-2xl text-gray-800 group-hover:text-white transition-colors duration-300"></i>
                 </a>
                 <p class="text-white text-xs sm:text-[12px]">LinkedIn</p>
@@ -20,7 +20,7 @@
 
             <!-- Instagram -->
             <div class="flex flex-col items-center space-y-2">
-                <a href="#" aria-label="Instagram" class="group inline-flex items-center justify-center w-10 h-10 bg-white rounded-full transform transition-all duration-300 hover:scale-110">
+                <a href="https://www.instagram.com/greycode_za/" aria-label="Instagram" class="group inline-flex items-center justify-center w-10 h-10 bg-white rounded-full transform transition-all duration-300 hover:scale-110">
                     <i class="fa-brands fa-instagram text-2xl text-gray-800 group-hover:text-pink-600 transition-colors duration-300"></i>
                 </a>
                 <p class="text-white text-xs sm:text-[12px]">Instagram</p>
@@ -28,7 +28,7 @@
 
             <!-- Facebook -->
             <div class="flex flex-col items-center space-y-2">
-                <a href="#" aria-label="Facebook" class="group inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-blue-700 rounded-full transform transition-all duration-300 hover:scale-110">
+                <a href="https://www.facebook.com/profile.php/?id=61565652753412" aria-label="Facebook" class="group inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-blue-700 rounded-full transform transition-all duration-300 hover:scale-110">
                     <i class="fa-brands fa-facebook-f text-2xl text-gray-800 group-hover:text-white transition-colors duration-300"></i>
                 </a>
                 <p class="text-white text-xs sm:text-[12px]">Facebook</p>
@@ -36,7 +36,7 @@
 
             <!-- X / Twitter -->
             <div class="flex flex-col items-center space-y-2">
-                <a href="#" aria-label="X" class="group inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-black hover:text-white rounded-full transform transition-all duration-300 hover:scale-110">
+                <a href="https://x.com/we_are_greycode" aria-label="X" class="group inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-black hover:text-white rounded-full transform transition-all duration-300 hover:scale-110">
                     <i class="fa-brands fa-x-twitter text-2xl text-gray-800 group-hover:text-white transition-colors duration-300"></i>
                 </a>
                 <p class="text-white text-xs sm:text-[12px]">X</p>
@@ -44,7 +44,7 @@
 
             <!-- YouTube -->
             <div class="flex flex-col items-center space-y-2">
-                <a href="#" aria-label="YouTube" class="group inline-flex items-center justify-center w-10 h-10 bg-white rounded-full transform transition-all duration-300 hover:scale-110">
+                <a href="https://www.youtube.com/@Greycode-skillshare" aria-label="YouTube" class="group inline-flex items-center justify-center w-10 h-10 bg-white rounded-full transform transition-all duration-300 hover:scale-110">
                     <i class="fa-brands fa-youtube text-2xl text-gray-800 group-hover:text-red-600 transition-colors duration-300"></i>
                 </a>
                 <p class="text-white text-xs sm:text-[12px]">YouTube</p>
@@ -83,7 +83,7 @@
         <div class="flex flex-col sm:flex-row justify-center text-white mt-6 space-y-2 sm:space-y-0 sm:space-x-6 text-center px-2">
             <p><a href="mailto:skillsprogram@greycode.co.za" class="hover:underline">skillsprogram@greycode.co.za</a></p>
             <p><a href="tel:+27124813515" class="hover:underline">+27 12 481 3515</a></p>
-            <p><a href="#" class="hover:underline">13 Stamvrug St, Val de Grace, Pretoria</a></p>
+            <p><a href="https://maps.app.goo.gl/hmF38qv8gKgC1WpJ9" class="hover:underline">13 Stamvrug St, Val de Grace, Pretoria</a></p>
         </div>
 
         <!-- Copyright -->

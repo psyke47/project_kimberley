@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot name="title">Blog - Greycode</x-slot>
     <x-slot name="meta_description">Stay updated with the latest news and insights from Greycode, your partner in IoT solutions.</x-slot>
-    <section class="bg-greycode-mid-blue relative overflow-hidden">
+    {{-- <section class="bg-greycode-mid-blue relative overflow-hidden">
     <!-- Fade effect at the bottom -->
     <div class="absolute bottom-0 left-0 w-full h-16  pointer-events-none"></div>
     
@@ -48,7 +48,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 {{-- <section class="container mx-auto px-4 py-8">
     <!-- Main blog container with rounded corners -->
     <div class="bg-white dark:bg-gray-800 dark:text-white dark:shadow-white rounded-2xl shadow-lg p-6 md:p-8">
@@ -171,68 +171,66 @@
     </section>
 
     {{-- Blog Posts Grid --}}
-    <section class="py-12 bg-white dark:bg-gray-900">
-        <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-grid">
-                {{-- Blog posts will be populated here --}}
-                @foreach($blogPosts as $post)
-                    <article class="blog-post bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-700" 
-                             data-aos="fade-up" 
-                             data-category="{{ $post['category'] }}"
-                             data-aos-delay="{{ $loop->index * 100 }}">
-                        <a href="{{ $post['url'] }}" class="block group">
-                            <div class="relative overflow-hidden">
-                                <img 
-                                    src="{{ $post['image'] }}" 
-                                    alt="{{ $post['title'] }}"
-                                    class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                                    loading="lazy"
-                                >
-                                <div class="absolute top-4 left-4">
-                                    <span class="px-3 py-1 text-xs font-semibold rounded-full 
-                                        {{ $post['category'] === 'education' ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' : '' }}
-                                        {{ $post['category'] === 'industry' ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200' : '' }}
-                                        {{ $post['category'] === 'articles' ? 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200' : '' }}">
-                                        {{ $post['category_label'] }}
-                                    </span>
-                                </div>
+<section class="py-12 bg-white dark:bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="blog-grid">
+            {{-- Blog posts will be populated here --}}
+            @foreach($blogPosts as $post)
+                <article class="blog-post bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-700" 
+                         data-category="{{ $post['category'] }}">
+                    <a href="{{ $post['url'] }}" class="block group">
+                        <div class="relative overflow-hidden">
+                            <img 
+                                src="{{ $post['image'] }}" 
+                                alt="{{ $post['title'] }}"
+                                class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
+                                loading="lazy"
+                            >
+                            <div class="absolute top-4 left-4">
+                                <span class="px-3 py-1 text-xs font-semibold rounded-full 
+                                    {{ $post['category'] === 'education' ? 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200' : '' }}
+                                    {{ $post['category'] === 'industry' ? 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200' : '' }}
+                                    {{ $post['category'] === 'articles' ? 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200' : '' }}">
+                                    {{ $post['category_label'] }}
+                                </span>
                             </div>
+                        </div>
+                        
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 line-clamp-2">
+                                {{ $post['title'] }}
+                            </h3>
                             
-                            <div class="p-6">
-                                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 line-clamp-2">
-                                    {{ $post['title'] }}
-                                </h3>
-                                
-                                <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
-                                    {{ $post['excerpt'] }}
-                                </p>
-                                
-                                <div class="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
-                                    <div class="flex items-center space-x-2">
-                                        <span class="font-semibold">{{ $post['author'] }}</span>
-                                        <span>•</span>
-                                        <span>{{ $post['date'] }}</span>
-                                    </div>
-                                    <span class="text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform duration-300">
-                                        Read More →
-                                    </span>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                                {{ $post['excerpt'] }}
+                            </p>
+                            
+                            <div class="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
+                                <div class="flex items-center space-x-2">
+                                    <span class="font-semibold">{{ $post['author'] }}</span>
+                                    <span>•</span>
+                                    <span>{{ $post['date'] }}</span>
                                 </div>
+                                <span class="text-blue-600 dark:text-blue-400 group-hover:translate-x-1 transition-transform duration-300">
+                                    Read More →
+                                </span>
                             </div>
-                        </a>
-                    </article>
-                @endforeach
-            </div>
-
-            {{-- Load More Button --}}
-            @if(count($blogPosts) >= 9)
-                <div class="text-center mt-12" data-aos="fade-up">
-                    <button id="load-more" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
-                        Load More Articles
-                    </button>
-                </div>
-            @endif
+                        </div>
+                    </a>
+                </article>
+            @endforeach
         </div>
-    </section>
+
+        {{-- Load More Button --}}
+        @if(count($blogPosts) >= 9)
+            <div class="text-center mt-12">
+                <button id="load-more" class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
+                    Load More Articles
+                </button>
+            </div>
+        @endif
+    </div>
+</section>
 
 <section class="bg-black py-8 text-white">
     <div class="container mx-auto px-4 py-6 lg:px-40">

@@ -42,15 +42,15 @@
                             <i class="fas fa-house-chimney mr-3 text-greycode-light-blue dark:text-blue-400 dark:group-hover:text-white"></i>
                             <span>Smart Homes</span>
                         </a>
-                        <a href="/smart-building" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 dark:text-gray-300 dark:hover:bg-blue-600">
+                        {{-- <a href="/smart-building" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 dark:text-gray-300 dark:hover:bg-blue-600">
                             <i class="fas fa-building mr-3 text-greycode-light-blue dark:text-blue-400 dark:group-hover:text-white"></i>
                             <span>Smart Buildings</span>
                         </a>
                         <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 dark:text-gray-300 dark:hover:bg-blue-600">
                             <i class="fas fa-receipt mr-3 text-greycode-light-blue dark:text-blue-400 dark:group-hover:text-white"></i>
                             <span>Tracking</span>
-                        </a>
-                        <a href="#" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 dark:text-gray-300 dark:hover:bg-blue-600">
+                        </a> --}}
+                        <a href="/prototyping" class="flex items-center px-4 py-3 text-gray-700 hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 dark:text-gray-300 dark:hover:bg-blue-600">
                             <i class="fas fa-microchip mr-3 text-greycode-light-blue dark:text-blue-400 dark:group-hover:text-white"></i>
                             <span>Prototyping</span>
                         </a>
@@ -111,9 +111,9 @@
                         <a href="/manufacturing" class="block text-greycode-light-blue hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 py-3 px-4 border-b border-gray-200 dark:border-gray-600 dark:text-blue-400 dark:hover:bg-blue-600">Manufacturing</a>
                         <a href="/mining-oil-gas" class="block text-greycode-light-blue hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 py-3 px-4 border-b border-gray-200 dark:border-gray-600 dark:text-blue-400 dark:hover:bg-blue-600">Mining, Oil & Gas</a>
                         <a href="/smart-home" class="block text-greycode-light-blue hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 py-3 px-4 border-b border-gray-200 dark:border-gray-600 dark:text-blue-400 dark:hover:bg-blue-600">Smart Homes</a>
-                        <a href="/smart-building" class="block text-greycode-light-blue hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 py-3 px-4 border-b border-gray-200 dark:border-gray-600 dark:text-blue-400 dark:hover:bg-blue-600">Smart Buildings</a>
-                        <a href="#" class="block text-greycode-light-blue hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 py-3 px-4 border-b border-gray-200 dark:border-gray-600 dark:text-blue-400 dark:hover:bg-blue-600">Tracking</a>
-                        <a href="#" class="block text-greycode-light-blue hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 py-3 px-4 dark:text-blue-400 dark:hover:bg-blue-600">Prototyping</a>
+                        {{-- <a href="/smart-building" class="block text-greycode-light-blue hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 py-3 px-4 border-b border-gray-200 dark:border-gray-600 dark:text-blue-400 dark:hover:bg-blue-600">Smart Buildings</a>
+                        <a href="/tracking" class="block text-greycode-light-blue hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 py-3 px-4 border-b border-gray-200 dark:border-gray-600 dark:text-blue-400 dark:hover:bg-blue-600">Tracking</a> --}}
+                        <a href="/prototyping" class="block text-greycode-light-blue hover:bg-greycode-light-blue hover:text-white transition-colors duration-200 py-3 px-4 dark:text-blue-400 dark:hover:bg-blue-600">Prototyping</a>
                     </div>
                 </div>
 

@@ -13,9 +13,11 @@
                     <p class="text-left leading-relaxed max-w-6xl mt-4 dark:text-gray-300">
                     At Greycode, we specialize in providing cutting-edge manufacturing solutions that drive efficiency and innovation. Our expertise spans a wide range of industries, including automotive, aerospace, electronics, and consumer goods. We leverage the latest technologies such as IoT, AI, and robotics to optimize production processes, reduce costs, and enhance product quality.
                     </p>
-                    <button class="gradient-outline-button uppercase mt-6" data-aos="fade-up" data-aos-delay="300">
-                    VIEW MORE
-                    </button>
+                    <a href="/contact">
+                        <button class="gradient-outline-button uppercase mt-6" data-aos="fade-up" data-aos-delay="300">
+                            Get Started
+                        </button>
+                    </a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                     <img src="{{ asset('images/Smart-manufacturing-engine.jpg')}}" alt="smart manufacturing" class="w-full max-w-md">

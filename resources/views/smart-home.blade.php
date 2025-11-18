@@ -13,9 +13,11 @@
                     <p class="text-gray-700 leading-relaxed dark:text-gray-300">
                         Transform your home into a haven of convenience and security with our Smart Home solutions. Experience unparalleled comfort and peace of mind as innovative technologies seamlessly integrate into your daily life. Control lighting, temperature, and security systems effortlessly with your smartphone or voice commands and enjoy personalized settings that adapt to your preferences, ensuring a cozy, safe, and efficient living environment.
                     </p>
-                    <button class="gradient-outline-button uppercase mt-6" data-aos="fade-up" data-aos-delay="300">
-                        Get Started
-                    </button>
+                    <a href="/contact">
+                        <button class="gradient-outline-button uppercase mt-6" data-aos="fade-up" data-aos-delay="300">
+                            Get Started
+                        </button>
+                    </a>
                 </div>
                 <div class="px-4" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                     <img src="{{ asset('images/65f021bb88b9105a4ceb964a_6599da1f1df5a8f2567872aa_smart_home-removebg-preview 1.jpg')}}" alt="smart home" class="w-full">
