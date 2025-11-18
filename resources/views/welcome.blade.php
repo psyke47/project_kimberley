@@ -18,7 +18,7 @@
             <div class="flex-1 w-full text-center md:text-left lg:pl-[390px]" 
                  data-aos="fade-right" 
                  data-aos-duration="600">
-                <h1 class="title-font text-3xl sm:text-3xl md:text-4xl lg:text-[55px] font-medium text-black in-dark:text-white uppercase leading-tight tracking-tight">
+                <h1 class="title-font text-5xl md:text-4xl lg:text-[55px] font-medium text-black in-dark:text-white uppercase leading-tight tracking-tight">
                     CONNECT, <br>CONTROL, AND<br>
                     AUTOMATE<br>
                     <span class="text-greycode-light-blue hero-underline">YOUR WORLD</span>
@@ -64,15 +64,15 @@
         What is <span class="text-greycode-light-blue">IOT</span>
     </h3>
     
-    <!-- Image Grid - Now horizontal on all devices -->
-    <div class="rounded-4xl p-4 sm:p-6 md:p-8 shadow-3xl mx-auto max-w-[90%] sm:max-w-3xl md:max-w-4xl" 
+    <!-- Image Grid -->
+    <div class="rounded-4xl p-4 sm:p-6 md:p-8 shadow-3xl mx-auto max-w-[90%] sm:max-w-2xl md:max-w-4xl" 
          style="background: #2C7DE6; background: linear-gradient(289deg, #2c7de6 25%, #7986A2 84%);"
          data-aos="zoom-in" 
          data-aos-duration="800"
          data-aos-delay="150">
-        <div class="flex flex-row justify-center items-center gap-3 sm:gap-6 md:gap-8 flex-wrap">
+        <div class="grid grid-cols-2 sm:flex sm:flex-row justify-center items-center gap-3 sm:gap-6 md:gap-8 flex-wrap">
             <!-- Smaller base size for mobile -->
-            <div>
+            <div class="flex flex-col items-center">
                 <img src="{{ asset('images/icons-01.png')}}"
                      class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300"
                      alt="IoT Icon 1"
@@ -80,7 +80,7 @@
                      data-aos-delay="300">
                      <p class="text-sm text-white text-center">Sensors capture data</p>
             </div>
-            <div>
+            <div class="flex flex-col items-center">
                 <img src="{{ asset('images/icons-02.png')}}"
                      class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300"
                      alt="IoT Icon 2"
@@ -88,7 +88,7 @@
                      data-aos-delay="400">
                      <p class="text-sm text-white text-center">Share data</p>
             </div>
-            <div>
+            <div class="flex flex-col items-center">
                 <img src="{{ asset('images/icons-03.png')}}"
                      class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300"
                      alt="IoT Icon 3"
@@ -96,7 +96,7 @@
                      data-aos-delay="500">
                     <p class="text-sm text-white text-center">Process data</p>
             </div>
-            <div>
+            <div class="flex flex-col items-center">
                 <img src="{{ asset('images/icons-04.png')}}"
                      class="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 object-contain hover:animate-wiggle transition-transform duration-300"
                      alt="IoT Icon 4"
@@ -129,7 +129,7 @@
     </div>
 
     <!-- Content -->
-    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16  relative z-10">
+    <div class="container mx-auto px-8 sm:px-6 md:px-8 lg:px-12 xl:px-16  relative z-10">
         <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-center mt-6 sm:mt-10" 
             data-aos="fade-down" 
             data-aos-duration="600">
