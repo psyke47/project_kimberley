@@ -57,7 +57,7 @@
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 <!-- Card 1 -->
-                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
+                <div class="card bg-white dark:bg-gray-700 w-full h-60 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div class="card-body p-6 flex flex-col justify-between">
                         <div>
@@ -68,7 +68,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
+                <div class="card bg-white dark:bg-gray-700 w-full h-60 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
                     <div class="card-body p-6 flex flex-col justify-between">
                         <div>
@@ -79,7 +79,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
+                <div class="card bg-white dark:bg-gray-700 w-full h-60 shadow-xl border-2 border-gray-200 dark:border-gray-600 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                     <div class="card-body p-6 flex flex-col justify-between">
                         <div>
