@@ -85,7 +85,7 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-0 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
+                <div class="card bg-white dark:bg-gray-700 w-full h-60 shadow-xl border-2 border-gray-200 dark:border-0 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                     <div class="card-body p-6 flex flex-col justify-between">
                         <div>
