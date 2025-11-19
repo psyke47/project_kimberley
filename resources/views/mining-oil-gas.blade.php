@@ -30,7 +30,7 @@
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div class="px-4" data-aos="fade-right" data-aos-duration="600">
-                    <img src="{{ asset('images/mining-safety.jpg')}}" alt="mining safety" class="w-full max-w-md">
+                    <img src="{{ asset('images/mining-safety1.png')}}" alt="mining safety" class="w-full max-w-md dark:bg-white">
                 </div>
                 <div class="px-4 space-y-6" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                     <p class="leading max-w-4xl dark:text-gray-300">Equipped with wearable sensors, environmental detectors, and advanced analytics, our solution not only keeps a watchful eye on crucial factors like air quality, temperature, and gas levels but also tracks miners' locations. In the event of an emergency, our system instantly sends alerts, enabling swift responses to mitigate risks. By prioritizing safety, we empower mining operations to protect their most valuable assets - their workforce</p>
@@ -44,7 +44,7 @@
                     <p class="leading max-w-4xl dark:text-gray-300">Fleet Management.With our solution, harness the power of real-time tracking to monitor diagnostic data, pinpoint precise locations, and optimize the performance of trucks and haulage equipment, effectively reducing congestion and minimizing wait times.</p>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                    <img src="{{ asset('images/mining_excavator.jpg')}}" alt="mining excavator" class="w-full max-w-md">
+                    <img src="{{ asset('images/mining_excavator.png')}}" alt="mining excavator" class="w-full max-w-md">
                 </div>
             </div>
         </section>

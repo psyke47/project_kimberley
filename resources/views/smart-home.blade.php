@@ -20,7 +20,7 @@
                     </a>
                 </div>
                 <div class="px-4" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                    <img src="{{ asset('images/65f021bb88b9105a4ceb964a_6599da1f1df5a8f2567872aa_smart_home-removebg-preview 1.jpg')}}" alt="smart home" class="w-full">
+                    <img src="{{ asset('images/smart-home.png')}}" alt="smart home" class="w-full">
                 </div>
             </div>
         </section>
@@ -34,7 +34,7 @@
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div class="px-4" data-aos="fade-right" data-aos-duration="600">
-                    <img src="{{ asset('images/65f0223229a4a29b4b3497cd_buildings 1.jpg')}}" alt="smart building">
+                    <img src="{{ asset('images/building1.png')}}" alt="smart building">
                 </div>
                 <div class="px-4 space-y-6" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                     <h2 class="text-4xl font-bold dark:text-white"><span class="text-greycode-light-blue">Smart</span> Building</h2>

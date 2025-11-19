@@ -7,7 +7,7 @@
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 flex items-center">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div class="px-4 space-y-6" data-aos="fade-right" data-aos-duration="600">
-                    <h2 class="text-4xl lg:text-5xl font-bold mb-4 dark:text-white">
+                    <h2 class="text-5xl lg:text-6xl font-bold mb-4 dark:text-white">
                         Smart Farming
                     </h2>
                     <p class="text-gray-700 leading-relaxed dark:text-gray-300">
@@ -20,7 +20,7 @@
                     </a>
                 </div>
                 <div class="px-4" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                    <img src="{{ asset('images/smart-farming.jpg') }}" alt="smart farming" class="w-full">
+                    <img src="{{ asset('images/smart-farming.png') }}" alt="smart farming" class="w-full dark:bg-white">
                 </div>
             </div>
         </section>
@@ -50,7 +50,7 @@
                     <p class="dark:text-gray-300">Elevate your livestock management with our remote tracking and monitoring system. This feature enables you to keep a constant, vigilant eye on the health, location, and behavior of your animals.</p>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                    <img src="{{ asset('images/Livestock-Monitoring.jpg')}}" alt="Livestock Monitoring">
+                    <img src="{{ asset('images/Livestock-Monitoring.png')}}" alt="Livestock Monitoring">
                 </div>
             </div>
         </section>

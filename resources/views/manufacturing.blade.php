@@ -20,7 +20,7 @@
                     </a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                    <img src="{{ asset('images/Smart-manufacturing-engine.jpg')}}" alt="smart manufacturing" class="w-full max-w-md">
+                    <img src="{{ asset('images/Smart-manufacturing-engine.png')}}" alt="smart manufacturing" class="w-full max-w-md">
                 </div>
             </div>
         </section>
@@ -38,7 +38,7 @@
                     <p class="ext-left leading-relaxed max-w-4xl mt-4 dark:text-gray-300">Experience the transformative power of industrial robotics as an integral part of our comprehensive IoT solution. With our Setup and Programming Service, you can harness the full potential of precision manufacturing to optimize your operations and drive efficiency.</p>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                    <img src="{{ asset('images/industrial-robotic-arm.jpg')}}" alt="Industrial robotic arm in a modern manufacturing facility, positioned against a clean, technological background. The sleek, articulated arm represents advanced automation capabilities in smart manufacturing" class="w-full max-w-md">
+                    <img src="{{ asset('images/industrial-robotic-arm.png')}}" alt="Industrial robotic arm in a modern manufacturing facility, positioned against a clean, technological background. The sleek, articulated arm represents advanced automation capabilities in smart manufacturing" class="w-full max-w-md dark:bg-white">
                 </div>
             </div>
         </section>
@@ -46,7 +46,7 @@
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-6">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div data-aos="fade-right" data-aos-duration="600">
-                    <img src="{{ asset('images/automation-drive.jpg')}}" alt="Automation drive system with gears and digital interface, symbolizing advanced manufacturing technology and industrial automation processes" class="w-full max-w-md">
+                    <img src="{{ asset('images/automation-drive.png')}}" alt="Automation drive system with gears and digital interface, symbolizing advanced manufacturing technology and industrial automation processes" class="w-full max-w-md dark:bg-white">
                 </div>
                 <div class="px-4" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                     <p class="text-left leading-relaxed max-w-4xl mt-4 dark:text-gray-300">
