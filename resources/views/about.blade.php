@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot name="title">About Us - Greycode</x-slot>
     
-    <section class="px-4 lg:px20">
+    <section class="px-4 lg:px20 bg-white dark:bg-gray-900">
         <div class="container mx-auto px-4 py-16 border-b border-greycode-light-blue">
             <h1 class="text-4xl font-bold mb-6 text-left text-gray-800 dark:text-white"><span class="text-greycode-light-blue">We are </span>building a <br><span class="text-greycode-light-blue">revolutionary</span> new way for <br><span class="text-greycode-light-blue">people</span> to interact with the <br>world around them.</h1>
             <p class="dark:text-white text-xl">Greycode is an Internet of things solution company based in South Africa, composed of a team of designers, engineers and makers. We ae focused on IOT as a service and also developing IoT hardware and software. We leverage our experience in electronics, mechatronics, computer science engineering, sensor technologies, embedded design and systems integration to build innovative connected solutions. we also gather all these new and disruptive trends from sensors, analytics, networks and software to deliver the most-advanced and cost effective solutions for any application.</p>
@@ -127,7 +127,7 @@
             <!-- Left Column -->
             <div class="space-y-8 lg:space-y-12">
                 <!-- Vision Block 01 -->
-                <div class="relative bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="relative bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl shadow-greycode-light-blue transition-shadow duration-300">
                     <div class="relative z-10">
                         <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
                             To create a more insightful and empowered society where technology enables people to build better communities.
@@ -140,7 +140,7 @@
                 </div>
 
                 <!-- Vision Block 02 -->
-                <div class="relative bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="relative bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl shadow-greycode-light-blue transition-shadow duration-300">
                     <div class="relative z-10">
                         <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
                             To be the single point of connectivity for businesses and people, helping them to resolve everyday problems or improve processes to create value and drive growth.
@@ -153,7 +153,7 @@
                 </div>
 
                 <!-- Vision Block 03 -->
-                <div class="relative bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="relative bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl shadow-greycode-light-blue transition-shadow duration-300">
                     <div class="relative z-10">
                         <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
                             To create a world-class IoT platform to connect everything, everyone and our experiences.
@@ -169,7 +169,7 @@
             <!-- Right Column -->
             <div class="space-y-8 lg:space-y-12">
                 <!-- Vision Block 04 -->
-                <div class="relative bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="relative bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl shadow-greycode-light-blue transition-shadow duration-300">
                     <div class="relative z-10">
                         <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
                             To build the future infrastructure and enable seamless interoperability between machines, sensors, applications and data by creating a global M2M (machine-to-machine) machine identity registry.
@@ -182,7 +182,7 @@
                 </div>
 
                 <!-- Vision Block 05 -->
-                <div class="relative bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="relative bg-white dark:bg-gray-800 rounded-xl p-6 sm:p-8 shadow-lg hover:shadow-xl shadow-greycode-light-blue transition-shadow duration-300">
                     <div class="relative z-10">
                         <h3 class="text-xl sm:text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
                             To become the underlying protocol for the Internet of Things (IoT) and thus a key technology for Smart Cities and the Economy of Things.
