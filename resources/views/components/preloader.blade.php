@@ -1,10 +1,10 @@
 {{-- Enhanced Preloader Component --}}
-<div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-white transition-opacity duration-500">
+<div id="preloader" class="fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-500 px-10">
     <div class="text-center">
         {{-- Larger Preloader Image Container --}}
         <div class="mb-8">
-            <div class="w-32 h-32 mx-auto bg-greycode-light-blue rounded-full animate-pulse flex items-center justify-center">
-                <img src="{{ asset('images/G-logo-black.png') }}" alt="Loading..." class="w-20 h-20 animate-pulse">
+            <div class="mx-auto  rounded-full animate-pulse flex items-center justify-center">
+                <img src="{{ asset('images/greycode-white-logo.png') }}" alt="Loading..." class="w-500 h-500 animate-pulse">
             </div>
         </div>
         
@@ -17,9 +17,9 @@
             
             {{-- Larger Loading Dots --}}
             <div class="flex items-center justify-center space-x-4">
-                <div class="w-4 h-4 bg-gray-500 rounded-full animate-bounce"></div>
-                <div class="w-4 h-4 bg-gray-500 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
-                <div class="w-4 h-4 bg-gray-500 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                <div class="w-10 h-10 bg-gray-500 rounded-full animate-bounce"></div>
+                <div class="w-10 h-10 bg-gray-500 rounded-full animate-bounce" style="animation-delay: 0.2s"></div>
+                <div class="w-10 h-10 bg-gray-500 rounded-full animate-bounce" style="animation-delay: 0.4s"></div>
             </div>
         </div>
     </div>
