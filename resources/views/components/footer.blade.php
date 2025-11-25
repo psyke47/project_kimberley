@@ -1,4 +1,4 @@
-<footer class="text-black py-8 bg-greycode-gray dark:bg-gray-900">
+<footer class="text-black py-8 bg-greycode-light-blue dark:bg-gray-900">
     <div class="container mx-auto px-4 max-w-7xl">
         <!-- Social icons: responsive flex-wrap so it adapts to all screen sizes -->
         <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-9">
