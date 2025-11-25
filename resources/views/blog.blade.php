@@ -154,18 +154,20 @@
     <section class="bg-gray-50 dark:bg-gray-800 py-8">
         <div class="container mx-auto px-6">
             <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up">
-                <button class="category-filter px-4 py-2 rounded-full bg-white dark:bg-gray-700 shadow-sm border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300 active" data-category="all">
-                    All Posts
-                </button>
-                <button class="category-filter px-4 py-2 rounded-full bg-white dark:bg-gray-700 shadow-sm border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300" data-category="education">
-                    Education
-                </button>
-                <button class="category-filter px-4 py-2 rounded-full bg-white dark:bg-gray-700 shadow-sm border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300" data-category="industry">
+                <button class="category-filter px-4 py-2 rounded-full bg-white dark:bg-gray-700 shadow-sm border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300 active" data-category="industry">
                     Industry
                 </button>
                 <button class="category-filter px-4 py-2 rounded-full bg-white dark:bg-gray-700 shadow-sm border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300" data-category="articles">
                     Articles
                 </button>
+                <button class="category-filter px-4 py-2 rounded-full bg-white dark:bg-gray-700 shadow-sm border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300" data-category="education">
+                    Education
+                </button>
+                <button class="category-filter px-4 py-2 rounded-full bg-white dark:bg-gray-700 shadow-sm border border-gray-200 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-all duration-300" data-category="all">
+                    All Posts
+                </button>
+                
+                
             </div>
         </div>
     </section>
