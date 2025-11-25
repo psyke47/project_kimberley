@@ -678,7 +678,7 @@
                 
                 @php
                     $articles = [
-                        [
+                        /* [
                             'title' => 'Bluetooth Speaker Tutorial',
                             'excerpt' => 'Build a fully functional Bluetooth speaker with custom 3D printed enclosure using Greycode IoT Dev Board.',
                             'image' => '/images/IMG_0132.png',
@@ -721,7 +721,7 @@
                             'author' => 'Akhona Mshike',
                             'date' => 'October 6, 2025',
                             'read_time' => '10 min read'
-                        ],
+                        ], */
                         [
                             'title' => 'IoT in Mining Industry',
                             'excerpt' => 'Explore how IoT technology is revolutionizing mining with smart monitoring and safety solutions.',
