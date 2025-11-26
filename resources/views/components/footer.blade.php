@@ -5,7 +5,7 @@
             <!-- TikTok -->
             <div class="flex flex-col items-center space-y-2">
                 <a href="https://www.tiktok.com/@greycode_skillshare?is_from_webapp=1&sender_device=pc" aria-label="TikTok" class="group inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-black rounded-full transform transition-all duration-300 hover:scale-110">
-                    <i class="fa-brands fa-tiktok text-2xl text-gray-800 hover:text-white transition-colors duration-300"></i>
+                    <i class="fa-brands fa-tiktok text-2xl text-gray-800 group-hover:text-white transition-colors duration-300"></i>
                 </a>
                 <p class="text-white text-xs sm:text-[12px]">TikTok</p>
             </div>
