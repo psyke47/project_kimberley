@@ -7,10 +7,11 @@
                 <img 
                     src="{{ asset('images/greycode-white-logo.png') }}" 
                     alt="Loading..." 
-                    class="w-32 h-16 sm:w-40 sm:h-20 md:w-56 md:h-28 lg:w-64 lg:h-32 xl:w-80 xl:h-40 animate-pulse filter brightness-0"
+                    class="aspect-[15/4] w-40 sm:w-48 md:w-64 lg:w-72 xl:w-96 animate-pulse filter brightness-0 object-contain"
                     loading="eager"
-                    width="256"
-                    height="128"
+                    {{-- Exact 15:4 ratio: width = 375, height = 100 (375 / 100 = 15 / 4) --}}
+                    width="375"
+                    height="100"
                 >
             </div>
         </div>
