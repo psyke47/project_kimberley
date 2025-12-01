@@ -1,61 +1,108 @@
 <x-layout>
     <x-slot name="title">Welcome to Greycode - IoT Solutions</x-slot>
     <x-slot name="meta_description">Discover Greycode, a leading IoT solutions company in South Africa. We specialize in connected technologies, smart automation, and innovative IoT products that transform industries and improve lives.</x-slot>
-<section class="text-gray-600 in-dark:text-white body-font min-h-screen flex items-center relative overflow-hidden">
-    <!-- Background Layers -->
-    <div class="absolute inset-0 z-0">
-        <div class="absolute inset-0 bg-greycode-light-gray in-dark:bg-gray-800"></div>
-        <div 
-            class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-100 xs:opacity-25 sm:opacity-50 md:opacity-75"
-            style="background-image: url('{{ asset('images/hero-background.png') }}');"
-        ></div>
+    <x-slot name="meta_keywords">IoT, Internet of Things, Smart Farming, Manufacturing, Mining, Smart Homes, Connected Technologies, IoT Solutions</x-slot>
+    <x-slot name="canonical_url">https://greycode.co.za/</x-slot>
+<section class="min-h-screen w-full bg-white dark:bg-black relative flex items-center">
+        <div class="absolute inset-0 z-0 bg-white dark:bg-black"
+             style="background-image:
+                    linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px),
+                    radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%);
+                    background-size: 40px 40px, 40px 40px, 100% 100%;">
+        </div>
+        
+        <div class="container mx-auto px-6 md:px-12 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-center min-h-screen py-12 xs:pt-0 sm:pt-0 xs:gap-8 sm:gap-8">
+    <!-- Text Column -->
+    <div class="w-full md:w-1/2 lg:w-2/3 text-center md:text-left order-2 md:order-1">
+        <h1 class="text-4xl md:text-6xl lg:text-7xl text-black dark:text-white font-bold mb-6">
+            CONNECT, <br>
+            CONTROL, &<br>
+            AUTOMATE<br>
+            <span class="text-greycode-light-blue hero-underline">YOUR WORLD</span>
+        </h1>
+        <p class="text-lg md:text-xl lg:text-2xl text-gray-600 dark:text-gray-400 mb-8">
+            Your gateway to cutting-edge IoT solutions for a smarter, more connected life.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="#" class="bg-greycode-light-blue hover:bg-greycode-dark-blue text-white font-bold py-3 px-6 rounded-md text-center transition-colors">
+                Contact Us
+            </a>
+            <a href="/" class="bg-black dark:bg-white dark:text-black hover:bg-greycode-dark-blue text-white font-bold py-3 px-6 rounded-md text-center transition-colors">
+                Skillshare Program
+            </a>
+        </div>
     </div>
 
-    <!-- Content Container -->
-    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 py-8 md:py-12 relative z-10 max-w-full">
-        <div class="flex flex-col md:flex-row items-center gap-4 sm:gap-6 md:gap-12 lg:gap-8">
-            <!-- Text Content -->
-            <div class="flex-1 w-full text-center md:text-left lg:pl-[390px]" 
-                 data-aos="fade-right" 
-                 data-aos-duration="600">
-                <h1 class="title-font text-5xl md:text-4xl lg:text-[55px] font-medium text-black in-dark:text-white uppercase leading-tight tracking-tight">
-                    CONNECT, <br>CONTROL, &<br>
-                    AUTOMATE<br>
-                    <span class="text-greycode-light-blue hero-underline">YOUR WORLD</span>
-                </h1>
+    <!-- Image Column -->
+    <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 mt-12 md:mt-0 flex items-center justify-center order-1 md:order-2 xs:pb-6 sm:pb-6">
+        <div class="relative w-full min-h-[220px] sm:min-h-[280px] md:min-h-[360px] lg:min-h-[420px] overflow-hidden rounded-xl">
+            <!-- Carousel Images -->
+            <div class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-100 flex items-center justify-center">
+                <img class="w-full h-auto max-h-full object-contain transform hover:scale-105 transition-transform duration-700" 
+                     src="{{ asset('images/roboticArm.png') }}" 
+                     alt="Robotic arm">
             </div>
-
-            <!-- Hero Image Carousel -->
-                <div class="w-full max-w-3xl lg:max-w-4xl xl:max-w-5xl flex-shrink-0  h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] justify-end-safe" 
-                     data-aos="fade-left" 
-                     data-aos-duration="600"
-                     data-aos-delay="150">
-                    <div class="relative w-full h-full overflow-hidden rounded-lg">
-                        <img class="carousel-slide active absolute top-0 left-0 w-full h-full object-contain hover:scale-[1.10] transition-transform duration-700"
-                             src="{{ asset('images/roboticArm.png') }}"
-                             alt="Robotic arm">
-                        <img class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-[1.10] transition-transform duration-700"
-                             src="{{ asset('images/home.png') }}"
-                             alt="Smart Home">
-                        <img class="carousel-slide absolute top-0 left-0 w-full h-full object-contain hover:scale-[1.10] transition-transform duration-700"
-                             src="{{ asset('images/building.png') }}"
-                             alt="Smart Building">
-                       
-                    </div>
-                </div>
+            <div class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0 flex items-center justify-center">
+                <img class="w-full h-auto max-h-full object-contain transform hover:scale-105 transition-transform duration-700" 
+                     src="{{ asset('images/home.png') }}" 
+                     alt="Smart Home">
+            </div>
+            <div class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0 flex items-center justify-center">
+                <img class="w-full h-auto max-h-full object-contain transform hover:scale-105 transition-transform duration-700" 
+                     src="{{ asset('images/building.png') }}" 
+                     alt="Smart Building">
+            </div>
+        </div>
     </div>
-</section>
+</div>
+
+        </div>
+    </section>
 
 {{--Carousel styling--}}
-<style>
-        .carousel-slide {
-            opacity: 0;
-            transition: opacity 1s ease-in-out;
-        }
-        .carousel-slide.active {
-            opacity: 1;
-        }
-    </style>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.carousel-slide');
+            let currentSlide = 0;
+            let autoSlideInterval;
+
+            function showSlide(n) {
+                // Hide all slides
+                slides.forEach(slide => slide.style.opacity = '0');
+                
+                // Show current slide
+                slides[n].style.opacity = '1';
+                currentSlide = n;
+            }
+
+            function nextSlide() {
+                let next = currentSlide + 1;
+                if (next >= slides.length) next = 0;
+                showSlide(next);
+            }
+
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 4000); // Change slide every 4 seconds
+            }
+
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+
+            // Pause auto-slide on hover
+            const carousel = document.querySelector('.relative.w-full');
+            if (carousel) {
+                carousel.addEventListener('mouseenter', stopAutoSlide);
+                carousel.addEventListener('mouseleave', startAutoSlide);
+            }
+
+            // Initialize
+            showSlide(0);
+            startAutoSlide();
+        });
+    </script>
 
 <section class="dark:bg-gray-800 dark:text-white py-8 sm:py-12 md:py-16">
     <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-center mt-10 px-4" 
