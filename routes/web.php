@@ -84,6 +84,21 @@ Route::get('/blog/youth-unemployment', function () {
     return view('blog/youth-unemployment');
 });
 
+Route::get('/testing', function () {
+    return view('testing');
+});
+
+Route::get('/demo-page', function () {
+    return view('demo-page');
+});
+
+Route::get('/store', function() {
+    return view('store');
+});
+
+Route::get('/education', function() {
+    return view('education');
+});
 
 // Blog landing page
 Route::get('/blog', [BlogController::class, 'index'])->name('blog.index');
@@ -122,4 +137,5 @@ Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subsc
 
 //Contact form submission
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+
 

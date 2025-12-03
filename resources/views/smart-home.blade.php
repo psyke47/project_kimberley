@@ -97,4 +97,5 @@
             </div>
         </section>
     </div>
+    <x-articles />
 </x-layout>

@@ -4,19 +4,18 @@
     <x-slot name="meta_keywords">IoT, Internet of Things, Smart Farming, Manufacturing, Mining, Smart Homes, Connected Technologies, IoT Solutions</x-slot>
     <x-slot name="canonical_url">https://greycode.co.za/</x-slot>
 <section class="min-h-screen w-full bg-white dark:bg-black relative flex items-center">
-        <div class="absolute inset-0 z-0 bg-white dark:bg-black"
-             style="background-image:
-                    linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px),
-                    radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%);
-                    background-size: 40px 40px, 40px 40px, 100% 100%;">
+        <div class="absolute inset-0 z-0 bg-white dark:bg-black">
         </div>
-        
+        <!-- /* style="background-image:
+                    radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%);
+                    background-size: 40px 40px, 40px 40px, 100% 100%;"
+            linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px), */ -->
         <div class="container mx-auto px-6 md:px-12 relative z-10">
-            <div class="flex flex-col md:flex-row items-center justify-center min-h-screen py-12 xs:pt-0 sm:pt-0 xs:gap-8 sm:gap-8">
+            <div class="flex flex-col md:flex-row items-center justify-center md:justify-top min-h-screen lg:py-12 xs:py-1 sm:py-1 md:py-0 xs:pt-0 sm:pt-0">
     <!-- Text Column -->
-    <div class="w-full md:w-1/2 lg:w-2/3 text-center md:text-left order-2 md:order-1">
-        <h1 class="text-4xl md:text-6xl lg:text-7xl text-black dark:text-white font-bold mb-6">
+    <div class="w-full md:w-1/2 lg:w-1/2 text-center md:text-left order-2 md:order-1">
+        <h1 class="text-3xl md:text-5xl lg:text-6xl text-black dark:text-white font-bold mb-6">
             CONNECT, <br>
             CONTROL, &<br>
             AUTOMATE<br>
@@ -26,32 +25,32 @@
             Your gateway to cutting-edge IoT solutions for a smarter, more connected life.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a href="#" class="bg-greycode-light-blue hover:bg-greycode-dark-blue text-white font-bold py-3 px-6 rounded-md text-center transition-colors">
+            <a href="/contact" class="bg-greycode-light-blue hover:bg-greycode-dark-blue text-white font-bold py-3 px-6 rounded-md text-center transition-colors">
                 Contact Us
             </a>
-            <a href="/" class="bg-black dark:bg-white dark:text-black hover:bg-greycode-dark-blue text-white font-bold py-3 px-6 rounded-md text-center transition-colors">
-                Skillshare Program
+            <a href="/education" class="bg-black dark:bg-white dark:text-black hover:bg-greycode-dark-blue text-white font-bold py-3 px-6 rounded-md text-center transition-colors">
+                Skillshare
             </a>
         </div>
     </div>
 
     <!-- Image Column -->
-    <div class="w-full sm:w-full md:w-1/2 lg:w-1/3 mt-12 md:mt-0 flex items-center justify-center order-1 md:order-2 xs:pb-6 sm:pb-6">
-        <div class="relative w-full min-h-[220px] sm:min-h-[280px] md:min-h-[360px] lg:min-h-[420px] overflow-hidden rounded-xl">
+    <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 mt-12 md:mt-0 flex items-center justify-center order-1 md:order-2 xs:pb-6 sm:pb-6">
+        <div class="relative w-full min-h-[220px] sm:min-h-[400px] md:min-h-[600px] lg:min-h-[700px] overflow-hidden rounded-xl">
             <!-- Carousel Images -->
             <div class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-100 flex items-center justify-center">
-                <img class="w-full h-auto max-h-full object-contain transform hover:scale-105 transition-transform duration-700" 
-                     src="{{ asset('images/roboticArm.png') }}" 
+                <img class="w-full h-auto max-h-full object-contain transition-transform duration-700" 
+                     src="{{ asset('images/hero11.png') }}" 
                      alt="Robotic arm">
             </div>
             <div class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0 flex items-center justify-center">
-                <img class="w-full h-auto max-h-full object-contain transform hover:scale-105 transition-transform duration-700" 
-                     src="{{ asset('images/home.png') }}" 
+                <img class="w-full h-auto max-h-full object-contain  transition-transform duration-700" 
+                     src="{{ asset('images/hero22.png') }}" 
                      alt="Smart Home">
             </div>
             <div class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0 flex items-center justify-center">
-                <img class="w-full h-auto max-h-full object-contain transform hover:scale-105 transition-transform duration-700" 
-                     src="{{ asset('images/building.png') }}" 
+                <img class="w-full h-auto max-h-full object-contain transition-transform duration-700" 
+                     src="{{ asset('images/hero33.png') }}" 
                      alt="Smart Building">
             </div>
         </div>
@@ -84,7 +83,7 @@
             }
 
             function startAutoSlide() {
-                autoSlideInterval = setInterval(nextSlide, 4000); // Change slide every 4 seconds
+                autoSlideInterval = setInterval(nextSlide, 2500); // Change slide every 4 seconds
             }
 
             function stopAutoSlide() {
@@ -585,7 +584,7 @@
   </div>
 </section>
 
-<section class="py-12 sm:py-16 dark:bg-gray-800 dark:text-white">
+{{-- <section class="py-12 sm:py-16 dark:bg-gray-800 dark:text-white">
     <div class="container mx-auto px-4 sm:px-6 md:px-8">
         <!-- Header Section -->
         <div class="text-center mb-8 sm:mb-12" data-aos="fade-down" data-aos-duration="600">
@@ -665,7 +664,158 @@
             </div>
         </div>
     </div>
+</section> --}}
+
+   <section class="relative py-12 sm:py-16 overflow-hidden text-black dark:text-white">
+        <!-- Radial Gradient Background -->
+     {{-- <div aria-hidden="true" class="absolute inset-0 pointer-events-none"
+          style="background: radial-gradient(circle at 50% 20%, rgba(6,10,20,1) 30%, rgba(44,64,120,0.6) 70%, rgba(88,24,141,0.35) 100%);"></div> --}}
+
+     <!-- Content wrapper to sit above the background -->
+     <div class="relative z-10">
+    <div class="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
+        <!-- Header Section -->
+        <div class="text-center text-black dark:text-white mb-8 sm:mb-12" data-aos="fade-down" data-aos-duration="600">
+            <h3 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 mt-6 sm:mt-10">
+                Learn, Build & <span class="text-greycode-light-blue">Innovate</span>
+            </h3>
+            <p class="text-lg sm:text-xl text-black dark:text-white/90">
+                The GREYCODE IoT Development Board
+            </p>
+        </div>
+
+        <!-- Unified Vertical Layout -->
+        <div class="space-y-12 max-w-5xl mx-auto">
+            <!-- First Text Block -->
+            <div class="p-6" data-aos="fade-up" data-aos-duration="500">
+                <p class="text-black dark:text-white leading-relaxed text-lg md:text-xl">
+                    This board is a premium, all-in-one solution engineered for demanding IoT and connected applications. 
+                    It features high-speed dual-core processing (240MHz), robust multi-connectivity (Wi-Fi, Bluetooth, 
+                    and 4G LTE/CAT-M1/NB-IoT support), and seamless data transmission.
+                </p>
+            </div>
+
+            <!-- Centered Image -->
+            <div class="text-center" data-aos="zoom-in" data-aos-duration="300">
+                <img 
+                    src="{{ asset('images/greycode-board.png') }}" 
+                    alt="GREYCODE IoT Development Board" 
+                    class="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-contain mx-auto filter drop-shadow-2xl"
+                >
+            </div>
+
+            <!-- Second Text Block -->
+            <div class="p-6" data-aos="fade-up" data-aos-duration="400" data-aos-delay="200">
+                <p class="text-black dark:text-white leading-relaxed text-lg md:text-xl">
+                    Designed for reliability in remote deployments, it includes GPS tracking and solar/battery power 
+                    options for uninterrupted operation. With advanced power management and rugged durability, this 
+                    board is ideal for industrial automation, smart agriculture, and asset monitoring—built to excel 
+                    in harsh environments with zero compromises.
+                </p>
+            </div>
+        </div>
+    </div>
 </section>
+
+
+
+{{-- <section class="min-h-screen flex items-center justify-center bg-white dark:bg-gray-800 overflow-hidden relative" style="height: 100vh;">
+    <div class="container mx-auto px-4 text-center relative z-10">
+        <!-- Animated Heading with Horizontal Fill Effect -->
+        <div class="relative inline-block mb-4 w-full">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold relative overflow-hidden w-full">
+                <span class="heading-fill block absolute left-0 top-0 w-full h-full z-10" aria-hidden="true">
+                    <span class="block w-full h-full" style="mask-image: linear-gradient(to right, black 0%, transparent 100%); -webkit-mask-image: linear-gradient(to right, black 0%, transparent 100%); animation: fillMask 2s cubic-bezier(0.77, 0, 0.175, 1) forwards; animation-delay: 0.5s;">
+                        <span class="text-greycode-light-blue">Ready to Get in Touch?</span>
+                    </span>
+                </span>
+                <span class="relative z-20 text-transparent">Ready to Get in Touch?</span>
+            </h2>
+        </div>
+
+        <!-- Subtext Paragraph -->
+        <p class="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-8 leading-relaxed" 
+           data-aos="fade-up" 
+           data-aos-delay="200" 
+           data-aos-duration="600">
+            Contact our team to discuss your IoT project requirements and discover how we can help you achieve your goals with cutting-edge solutions.
+        </p>
+
+        <!-- Call-to-Action Button -->
+        <div class="mt-10" 
+             data-aos="fade-up" 
+             data-aos-delay="400" 
+             data-aos-duration="600">
+            <a href="/contact" 
+               class="inline-block px-8 py-4 text-lg font-semibold text-white bg-greycode-light-blue rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95">
+                Contact Us
+                <svg class="inline-block w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+            </a>
+        </div>
+    </div>
+        
+    <!-- Decorative elements -->
+    <div class="absolute -bottom-20 -right-20 w-64 h-64 bg-greycode-light-blue/5 rounded-full blur-3xl decorative-circle"></div>
+    <div class="absolute -top-20 -left-20 w-64 h-64 bg-greycode-dark-blue/5 rounded-full blur-3xl decorative-circle"></div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div class="w-6 h-10 border-2 border-gray-400 dark:border-gray-600 rounded-full flex justify-center">
+            <div class="w-1 h-3 bg-gray-400 dark:bg-gray-600 rounded-full mt-2 animate-pulse"></div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Heading fill animation */
+.heading-fill {
+    pointer-events: none;
+    background: linear-gradient(90deg, #2C7DE6 0%, #7986A2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Responsive decorative circles */
+@media (max-width: 640px) {
+    .decorative-circle {
+        width: 120px !important;
+        height: 120px !important;
+    }
+    .decorative-circle:first-of-type {
+        bottom: -60px !important;
+        right: -60px !important;
+    }
+    .decorative-circle:last-of-type {
+        top: -60px !important;
+        left: -60px !important;
+    }
+}
+
+@keyframes fillMask {
+    0% {
+        mask-size: 0% 100%;
+        -webkit-mask-size: 0% 100%;
+    }
+    100% {
+        mask-size: 100% 100%;
+        -webkit-mask-size: 100% 100%;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // AOS initialization (if AOS library is included)
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    }
+});
+</script> --}}
 
 <section class="py-16 icon-background">
     <div class="container mx-auto px-4">
@@ -873,6 +1023,16 @@
                 <i class="fas fa-arrow-right ml-2"></i>
             </a>
         </div>
+    </div>
+</section>
+
+<section class="sticky-section bg-white dark:bg-gray-800 min-h-screen flex flex-col items-center justify-center px-6 py-12">
+    <h2 class="text-black text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold relative overflow-hidden w-full reveal-type text-center" data-bg-color="#DCDCDC" data-fg-color="#2C7DE6">Ready to Get in Touch?</h2>
+    
+    <div class="mt-10"><button class="inline-block px-8 py-4 text-lg font-semibold text-white bg-greycode-light-blue rounded-lg shadow-lg hover:shadow-2xl transform transition-all duration-300 hover:-translate-y-1 hover:scale-105 active:scale-95"><a href="/contact">Contact Us</a></button></div>
+</section>
+<section class="content-section bg-white dark:bg-gray-800">
+    <div class="h-screen flex items-center justify-center">
     </div>
 </section>
 
