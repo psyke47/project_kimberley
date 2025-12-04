@@ -68,7 +68,7 @@ class BlogController extends Controller
                 'url' => route('blog.radar-system'),
                 'category' => 'education',
                 'category_label' => 'Education',
-                'author' => 'Akhona Mshike',
+                'author' => 'Akhona Mshiki',
                 'date' => 'October 6, 2025',
                 'read_time' => '10 min read'
             ],
