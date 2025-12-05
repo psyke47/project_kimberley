@@ -113,14 +113,14 @@
 
     <section class="dark:bg-gray-800 dark:text-white py-8 sm:py-12 md:py-16">
         <h3 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-center mt-10 px-4" data-aos="fade-down"
-            data-aos-duration="600">
+            data-aos-duration="400">
             What is <span class="text-greycode-light-blue">IOT</span>
         </h3>
 
         <!-- Image Grid -->
         <div class="rounded-4xl p-4 sm:p-6 md:p-8 shadow-3xl mx-auto max-w-[90%] sm:max-w-2xl md:max-w-4xl"
             style="background: #2C7DE6; background: linear-gradient(289deg, #2c7de6 25%, #7986A2 84%);"
-            data-aos="zoom-in" data-aos-duration="800" data-aos-delay="150">
+            data-aos="zoom-in" data-aos-duration="600" data-aos-delay="150">
             <div
                 class="grid grid-cols-2 sm:flex sm:flex-row justify-center items-center gap-3 sm:gap-6 md:gap-8 flex-wrap">
                 <!-- Smaller base size for mobile -->
@@ -495,16 +495,16 @@
     </section>
 
     <section class="flex flex-col items-center justify-center text-center mb-10 dark:bg-gray-800 dark:text-white">
-        <h3 class="text-5xl font-bold mb-4 text-center" data-aos="fade-down" data-aos-duration="600">
+        <h3 class="text-5xl font-bold mb-4 text-center" data-aos="fade-down" data-aos-duration="300">
             Success <span class="text-greycode-light-blue">Stories</span>
         </h3>
-        <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="150" data-aos-duration="500">Get to know more
+        <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="150" data-aos-duration="300">Get to know more
             about the work we do.</p>
 
         <div class="flex flex-wrap justify-center gap-8 max-w-7xl mx-auto">
             <!-- Card 1 -->
             <div class="card bg-base-100 w-96 shadow-md shadow-greycode-light-blue" data-aos="fade-right"
-                data-aos-delay="250" data-aos-duration="600">
+                data-aos-delay="250" data-aos-duration="300">
                 <figure class="px-10 pt-10">
                     <img src="{{ asset('images/pexels-nc-farm-bureau-mark-2889442.jpg') }}" alt="Shoes"
                         class="rounded-xl" />
@@ -792,13 +792,13 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="container mx-auto px-4">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <!-- Image Column (One Third) -->
-                <div class="w-full lg:w-1/3" data-aos="fade-right" data-aos-duration="600">
+                <div class="w-full lg:w-1/3" data-aos="fade-right" data-aos-duration="300">
                     <img src="{{ asset('images/prototype-board.png') }}" alt="Section Image"
                         class="w-full h-auto rounded-2xl shadow-lg object-cover">
                 </div>
 
                 <!-- Content Column (Two Thirds) -->
-                <div class="w-full lg:w-2/3" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+                <div class="w-full lg:w-2/3" data-aos="fade-left" data-aos-duration="300" data-aos-delay="150">
                     <h2 class="text-5xl md:text-5xl font-bold text-white">
                         Do you have an <span class="text-black">idea</span>? <br>Let's <span
                             class="text-black">Prototype</span> it.
@@ -814,7 +814,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         </div>
     </section>
-    <!-- placeholder for articles section -->
+    
     <section class="py-16 bg-gray-50 dark:bg-gray-800 dark:text-white scroll-px-10">
         <div class="container mx-auto px-4">
             <!-- Section Header -->
@@ -1003,7 +1003,7 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
             <!-- View All Articles Button -->
-            <div class="text-center mt-12" data-aos="fade-up" data-aos-duration="600">
+            <div class="text-center mt-12" data-aos="fade-up" data-aos-duration="300">
                 <a href="{{ route('blog.index') }}"
                     class="inline-flex items-center bg-greycode-light-blue text-white px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-greycode-mid-blue transition-colors duration-300">
                     View All Articles
