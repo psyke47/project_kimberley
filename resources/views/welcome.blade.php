@@ -1172,7 +1172,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Initialize AOS animations
         document.addEventListener('DOMContentLoaded', function() {
             AOS.init({
-                duration: 800,
+                duration: 300,
                 once: true
             });
 
