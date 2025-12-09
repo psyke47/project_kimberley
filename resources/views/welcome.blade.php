@@ -49,17 +49,20 @@
                         <div
                             class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-100 flex items-center justify-center">
                             <img class="w-full h-auto max-h-full object-contain transition-transform duration-700"
-                                src="{{ asset('images/hero11.png') }}" alt="Robotic arm">
+                                src="{{ asset('images/hero11.png') }}" alt="Robotic arm"
+                                fetchpriority="high">
                         </div>
                         <div
                             class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0 flex items-center justify-center">
                             <img class="w-full h-auto max-h-full object-contain  transition-transform duration-700"
-                                src="{{ asset('images/hero22.png') }}" alt="Smart Home">
+                                src="{{ asset('images/hero22.png') }}" alt="Smart Home"
+                                fetchpriority="high">
                         </div>
                         <div
                             class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-0 flex items-center justify-center">
                             <img class="w-full h-auto max-h-full object-contain transition-transform duration-700"
-                                src="{{ asset('images/hero33.png') }}" alt="Smart Building">
+                                src="{{ asset('images/hero33.png') }}" alt="Smart Building"
+                                fetchpriority="high">
                         </div>
                     </div>
                 </div>
@@ -406,7 +409,7 @@
                     </div>
 
                     {{-- Tracking Tab --}}
-                    <div x-show="activeTab === 'tracking'" x-transition:enter="transition ease-out duration-300"
+                    {{-- <div x-show="activeTab === 'tracking'" x-transition:enter="transition ease-out duration-300"
                         x-transition:enter-start="opacity-0 transform translate-y-4"
                         x-transition:enter-end="opacity-100 transform translate-y-0"
                         x-transition:leave="transition ease-in duration-200"
@@ -434,11 +437,11 @@
                             </div>
                             <div class="home-v3-services-image-grid flex-1 grid grid-cols-2 gap-4"
                                 data-aos="fade-left" data-aos-delay="200">
-                                <img src="/images/0/14400875/61efbf248aee48b4faeeebf3_location.png"
+                                <img src="/images/61efbf248aee48b4faeeebf3_location.png"
                                     alt="Asset Location"
                                     class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                                     loading="lazy">
-                                <img src="/images/0/14400834/61efba7b26f04cb2b4a57d45_GPS12.png"
+                                <img src="/images/61efba7b26f04cb2b4a57d45_GPS12.png"
                                     alt="GPS Module Visual"
                                     class="service-square-image w-full h-64 lg:h-80 object-cover rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                                     loading="lazy">
@@ -446,7 +449,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- View More Button -->
             {{-- <div class="text-center mt-8" data-aos="fade-up" data-aos-delay="400">
