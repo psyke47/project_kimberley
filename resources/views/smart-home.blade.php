@@ -11,7 +11,7 @@
                         <span class="text-greycode-light-blue">Smart</span> Home
                     </h2>
                     <p class="text-gray-700 leading-relaxed dark:text-gray-300">
-                        Transform your home into a haven of convenience and security with our Smart Home solutions. Experience unparalleled comfort and peace of mind as innovative technologies seamlessly integrate into your daily life. Control lighting, temperature, and security systems effortlessly with your smartphone or voice commands and enjoy personalized settings that adapt to your preferences, ensuring a cozy, safe, and efficient living environment.
+                        Smart home automation allows you to remotely control and manage your home appliances from anywhere, giving you greater comfort, security, and convenience. With smart home technology, you can easily control lighting, temperature, and security systems using your smartphone or simple voice commands. These intelligent systems adapt to your daily routines and personal preferences, creating a safe, energy-efficient, and comfortable living environment.<br/><br/>At Greycode, we focus on delivering seamless smart home automation solutions that simplify everyday life while enhancing the overall home experience. Our goal is not only to provide an exceptional customer experience, but also to deliver reliable, innovative smart home technologies designed to make your home smarter and more efficient.
                     </p>
                     <a href="/contact">
                         <button class="gradient-outline-button uppercase mt-6" data-aos="fade-up" data-aos-delay="300">
