@@ -46,7 +46,11 @@
                     <div
                         class="relative w-full min-h-[220px] sm:min-h-[400px] md:min-h-[600px] lg:min-h-[700px] overflow-hidden rounded-xl">
                         <!-- Carousel Images -->
-                        <div
+                        <div>
+                            <img class="w-full h-auto max-h-full object-contain transition-transform duration-700"
+                                src="{{ asset('images/Hand Services2x.png') }}" alt="Greycode Services" fetchpriority="high">
+                        </div>
+                        {{-- <div
                             class="carousel-slide absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out opacity-100 flex items-center justify-center">
                             <img class="w-full h-auto max-h-full object-contain transition-transform duration-700"
                                 src="{{ asset('images/hero11.png') }}" alt="Robotic arm"
@@ -63,7 +67,7 @@
                             <img class="w-full h-auto max-h-full object-contain transition-transform duration-700"
                                 src="{{ asset('images/hero33.png') }}" alt="Smart Building"
                                 fetchpriority="high">
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
