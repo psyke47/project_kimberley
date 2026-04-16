@@ -1,6 +1,6 @@
 import './bootstrap';
 
-// Dark mode toggle functionality with light mode as default
+/* // Dark mode toggle functionality with light mode as default
     document.addEventListener('DOMContentLoaded', function() {
         // Theme toggle elements
         const themeToggleBtns = [
@@ -139,3 +139,111 @@ import './bootstrap';
             });
         });
     });
+ */
+
+// GSAP ScrollTrigger and SplitType Animation
+gsap.registerPlugin(ScrollTrigger)
+
+    // Get the section and heading
+    const section = document.querySelector('.sticky-section')
+    const heading = document.querySelector('.reveal-type')
+    
+    // Split the text into characters
+    const text = new SplitType(heading, { types: 'chars' })
+    
+    // Get colors from data attributes
+    const bg = heading.dataset.bgColor
+    const fg = heading.dataset.fgColor
+    
+    // Calculate total animation duration based on number of characters
+    const totalChars = text.chars.length
+    const staggerTime = 0.02
+    const charDuration = 0.3
+    const totalDuration = (totalChars * staggerTime) + charDuration
+    
+    // Create a ScrollTrigger to pin the section while animating
+    ScrollTrigger.create({
+        trigger: section,
+        start: "top top", // When top of section hits top of viewport
+        end: "+=100%", // Scroll distance needed for animation
+        pin: true,
+        pinSpacing: false,
+        scrub: 1,
+        markers: false, // Set to false for production
+        onEnter: () => {
+            console.log("Entering pinned section")
+        },
+        onLeave: () => {
+            console.log("Leaving pinned section - animation complete")
+        }
+    })
+    
+    // Create the character color animation
+    gsap.fromTo(text.chars, 
+        {
+            color: bg,
+        },
+        {
+            color: fg,
+            duration: charDuration,
+            stagger: staggerTime,
+            ease: "none",
+            scrollTrigger: {
+                trigger: section,
+                start: "top 20%", // Start when section is 20% from top
+                end: `+=${window.innerHeight}`, // End after scrolling one viewport height
+                scrub: true,
+                toggleActions: "play play reverse reverse",
+                markers: false // Set to false for production
+            }
+        }
+    )
+    
+    // Optional: Add a progress indicator
+    const progressIndicator = document.createElement('div')
+    progressIndicator.style.cssText = `
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: rgba(0,0,0,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        z-index: 1000;
+    `
+    document.body.appendChild(progressIndicator)
+    
+    // Update progress indicator
+    ScrollTrigger.create({
+        trigger: section,
+        start: "top 20%",
+        end: `+=${window.innerHeight}`,
+        onUpdate: (self) => {
+            const progress = Math.round(self.progress * 100)
+            progressIndicator.textContent = `${progress}%`
+            progressIndicator.style.background = `rgba(44, 125, 230, ${0.1 + (progress/100 * 0.9)})`
+        }
+    })
+
+    // Initialize Lenis for smooth scrolling
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        smoothWheel: true,
+    })
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+    
+    requestAnimationFrame(raf)
+    
+    // Refresh ScrollTrigger after Lenis is initialized
+    setTimeout(() => {
+        ScrollTrigger.refresh()
+    }, 100)

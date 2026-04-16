@@ -11,7 +11,7 @@
                         <span class="text-greycode-light-blue">Smart</span> Home
                     </h2>
                     <p class="text-gray-700 leading-relaxed dark:text-gray-300">
-                        Transform your home into a haven of convenience and security with our Smart Home solutions. Experience unparalleled comfort and peace of mind as innovative technologies seamlessly integrate into your daily life. Control lighting, temperature, and security systems effortlessly with your smartphone or voice commands and enjoy personalized settings that adapt to your preferences, ensuring a cozy, safe, and efficient living environment.
+                        Smart home automation allows you to remotely control and manage your home appliances from anywhere, giving you greater comfort, security, and convenience. With smart home technology, you can easily control lighting, temperature, and security systems using your smartphone or simple voice commands. These intelligent systems adapt to your daily routines and personal preferences, creating a safe, energy-efficient, and comfortable living environment.<br/><br/>At Greycode, we focus on delivering seamless smart home automation solutions that simplify everyday life while enhancing the overall home experience. Our goal is not only to provide an exceptional customer experience, but also to deliver reliable, innovative smart home technologies designed to make your home smarter and more efficient.
                     </p>
                     <a href="/contact">
                         <button class="gradient-outline-button uppercase mt-6" data-aos="fade-up" data-aos-delay="300">
@@ -20,7 +20,7 @@
                     </a>
                 </div>
                 <div class="px-4" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
-                    <img src="{{ asset('images/65f021bb88b9105a4ceb964a_6599da1f1df5a8f2567872aa_smart_home-removebg-preview 1.jpg')}}" alt="smart home" class="w-full">
+                    <img src="{{ asset('images/smart-home.png')}}" alt="smart home" class="w-full">
                 </div>
             </div>
         </section>
@@ -34,7 +34,7 @@
         <section class="container mx-auto px-6 sm:px-8 lg:px-16 py-8 space-y-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div class="px-4" data-aos="fade-right" data-aos-duration="600">
-                    <img src="{{ asset('images/65f0223229a4a29b4b3497cd_buildings 1.jpg')}}" alt="smart building">
+                    <img src="{{ asset('images/building1.png')}}" alt="smart building">
                 </div>
                 <div class="px-4 space-y-6" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
                     <h2 class="text-4xl font-bold dark:text-white"><span class="text-greycode-light-blue">Smart</span> Building</h2>
@@ -52,7 +52,7 @@
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
                 <!-- Card 1 -->
-                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-0 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
+                <div class="card bg-white dark:bg-gray-700 w-full h-60 shadow-xl border-2 border-gray-200 dark:border-0 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
                     <div class="card-body p-6 flex flex-col justify-between">
                         <div>
@@ -63,7 +63,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-0 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
+                <div class="card bg-white dark:bg-gray-700 w-full h-60 shadow-xl border-2 border-gray-200 dark:border-0 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
                     <div class="card-body p-6 flex flex-col justify-between">
                         <div>
@@ -74,7 +74,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-0 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
+                <div class="card bg-white dark:bg-gray-700 w-full h-60 shadow-xl border-2 border-gray-200 dark:border-0 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                     <div class="card-body p-6 flex flex-col justify-between">
                         <div>
@@ -85,7 +85,7 @@
                 </div>
 
                 <!-- Card 4 -->
-                <div class="card bg-white dark:bg-gray-700 w-full h-80 shadow-xl border-2 border-gray-200 dark:border-0 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
+                <div class="card bg-white dark:bg-gray-700 w-full h-60 shadow-xl border-2 border-gray-200 dark:border-0 rounded-2xl hover:shadow-2xl dark:shadow-greycode-light-blue transition-all duration-300"
                      data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
                     <div class="card-body p-6 flex flex-col justify-between">
                         <div>
@@ -97,4 +97,5 @@
             </div>
         </section>
     </div>
+    <x-articles />
 </x-layout>

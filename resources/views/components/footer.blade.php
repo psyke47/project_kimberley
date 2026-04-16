@@ -1,11 +1,11 @@
-<footer class="text-black py-8 bg-greycode-gray dark:bg-gray-900">
+<footer class="text-black py-8 bg-greycode-light-blue dark:bg-gray-900">
     <div class="container mx-auto px-4 max-w-7xl">
         <!-- Social icons: responsive flex-wrap so it adapts to all screen sizes -->
         <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-9">
             <!-- TikTok -->
             <div class="flex flex-col items-center space-y-2">
                 <a href="https://www.tiktok.com/@greycode_skillshare?is_from_webapp=1&sender_device=pc" aria-label="TikTok" class="group inline-flex items-center justify-center w-10 h-10 bg-white hover:bg-black rounded-full transform transition-all duration-300 hover:scale-110">
-                    <i class="fa-brands fa-tiktok text-2xl text-gray-800 hover:text-white transition-colors duration-300"></i>
+                    <i class="fa-brands fa-tiktok text-2xl text-gray-800 group-hover:text-white transition-colors duration-300"></i>
                 </a>
                 <p class="text-white text-xs sm:text-[12px]">TikTok</p>
             </div>
