@@ -1,1 +1,0 @@
-<x-coming-soon />
